@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-brand-navy: #071126;
+    --color-hero-navy-start: #081635;
+    --color-hero-navy-end: #0d204a;
+    --color-brand-lime: #7EC636;
+    --color-brand-lime-hover: #6CB428;
+    --color-primary-blue: #2563EB;
+    --color-primary-blue-hover: #1D4ED8;
+  }
+  
+  html {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #071126;
+    color: #f8fafc;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Custom Utilities & Keyframe Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(126, 198, 54, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(126, 198, 54, 0.5);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #071126;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7EC636;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(13, 32, 74, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+

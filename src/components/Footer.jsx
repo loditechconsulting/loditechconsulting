@@ -1,5 +1,6 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Clock, ArrowUp, ShieldCheck } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, ArrowUp } from 'lucide-react';
+import Logo from './Logo';
 
 const LinkedInIcon = (props) => (
   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" {...props}>
@@ -27,23 +28,9 @@ export default function Footer() {
           
           {/* Column 1: Brand & Narrative */}
           <div className="lg:col-span-4 space-y-5 text-left">
-            <div className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#081635] to-[#1e293b] border border-slate-700 flex items-center justify-center font-extrabold text-lg text-white">
-                <span className="text-white">L</span>
-                <span className="text-[#7EC636]">o</span>
-                <span className="text-[#2563EB]">D</span>
-                <span className="text-white">i</span>
-              </div>
-              <div className="flex flex-col">
-                <div className="flex items-center gap-1">
-                  <span className="font-extrabold text-xl tracking-tight text-white">LoDi</span>
-                  <span className="w-2 h-2 rounded-full bg-[#7EC636]"></span>
-                </div>
-                <span className="text-[9px] font-semibold tracking-widest text-slate-400 uppercase -mt-1">
-                  Tech Consulting
-                </span>
-              </div>
-            </div>
+            <a href="#home" className="inline-block" aria-label="LoDi Tech Consulting Home">
+              <Logo variant="dark" className="h-12 w-auto" />
+            </a>
 
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
               LoDi Tech Consulting delivers high-impact enterprise IT transformation. Specializing in SAP S/4HANA implementation, SAP Data Archiving, AWS Cloud migration, and AI-driven automation.

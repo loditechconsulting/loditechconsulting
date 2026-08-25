@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Navbar({ onOpenConsultation }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,24 +35,8 @@ export default function Navbar({ onOpenConsultation }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
         {/* Brand Logo */}
-        <a href="#home" className="flex items-center gap-2.5 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#081635] to-[#1e293b] border border-slate-700/80 flex items-center justify-center font-extrabold text-xl text-white shadow-lg group-hover:border-[#7EC636] transition-all">
-            <span className="text-white">L</span>
-            <span className="text-[#7EC636]">o</span>
-            <span className="text-[#2563EB]">D</span>
-            <span className="text-white">i</span>
-          </div>
-          <div className="flex flex-col text-left">
-            <div className="flex items-center gap-1">
-              <span className="font-extrabold text-xl tracking-tight text-white font-['Plus_Jakarta_Sans']">
-                LoDi
-              </span>
-              <span className="w-2 h-2 rounded-full bg-[#7EC636] animate-pulse"></span>
-            </div>
-            <span className="text-[9px] font-bold tracking-widest text-slate-400 uppercase -mt-1">
-              Tech Consulting Private Limited
-            </span>
-          </div>
+        <a href="#home" className="flex items-center group py-1" aria-label="LoDi Tech Consulting Home">
+          <Logo variant="dark" className="h-10 sm:h-12 w-auto transition-all group-hover:brightness-110" />
         </a>
 
         {/* Desktop Navigation Links */}

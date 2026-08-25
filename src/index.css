@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --text-6xl: 3rem;
+  --text-6xl--line-height: 1.15;
+}
+
 @layer base {
   :root {
+    --text-6xl: 3rem;
     --color-brand-navy: #071126;
     --color-hero-navy-start: #081635;
     --color-hero-navy-end: #0d204a;

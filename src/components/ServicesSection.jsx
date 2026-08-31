@@ -100,7 +100,7 @@ export default function ServicesSection({ onOpenConsultation }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#071126] text-[#7EC636] text-xs font-bold uppercase tracking-wider shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#071126] text-[#2563EB] text-xs font-bold uppercase tracking-wider shadow-sm">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Core Services</span>
           </div>
@@ -121,11 +121,11 @@ export default function ServicesSection({ onOpenConsultation }) {
               <div
                 key={service.id}
                 onClick={() => setSelectedService(service)}
-                className="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#7EC636] transition-all duration-300 group cursor-pointer flex flex-col justify-between text-left transform hover:-translate-y-1.5"
+                className="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#2563EB] transition-all duration-300 group cursor-pointer flex flex-col justify-between text-left transform hover:-translate-y-1.5"
               >
                 <div>
                   {/* Icon */}
-                  <div className="w-12 h-12 rounded-xl bg-[#081635] text-[#7EC636] flex items-center justify-center mb-5 group-hover:bg-[#7EC636] group-hover:text-[#071126] transition-colors duration-300 shadow-md">
+                  <div className="w-12 h-12 rounded-xl bg-[#081635] text-[#2563EB] flex items-center justify-center mb-5 group-hover:bg-[#2563EB] group-hover:text-white transition-colors duration-300 shadow-md">
                     <IconComponent className="w-6 h-6" />
                   </div>
 
@@ -142,7 +142,7 @@ export default function ServicesSection({ onOpenConsultation }) {
                 </div>
 
                 {/* Card Action Link */}
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#2563EB] group-hover:text-[#7EC636] transition-colors">
+                <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#2563EB] group-hover:text-[#1D4ED8] transition-colors">
                   <span>Explore Service Capabilities</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -163,7 +163,7 @@ export default function ServicesSection({ onOpenConsultation }) {
           </div>
           <button
             onClick={onOpenConsultation}
-            className="w-full sm:w-auto shrink-0 bg-[#7EC636] hover:bg-[#6CB428] text-[#071126] font-bold text-base px-8 py-4 rounded-xl shadow-lg transition-all transform hover:scale-105 cursor-pointer"
+            className="w-full sm:w-auto shrink-0 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg transition-all transform hover:scale-105 cursor-pointer"
           >
             Talk to Our Experts →
           </button>
@@ -186,7 +186,7 @@ export default function ServicesSection({ onOpenConsultation }) {
 
             {/* Modal Content */}
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 rounded-2xl bg-[#081635] text-[#7EC636] flex items-center justify-center shrink-0 shadow-lg">
+              <div className="w-14 h-14 rounded-2xl bg-[#081635] text-[#2563EB] flex items-center justify-center shrink-0 shadow-lg">
                 {React.createElement(selectedService.icon, { className: 'w-7 h-7' })}
               </div>
               <div>
@@ -206,7 +206,7 @@ export default function ServicesSection({ onOpenConsultation }) {
             <div className="space-y-3 mb-8">
               {selectedService.features.map((feature, idx) => (
                 <div key={idx} className="flex items-start gap-3 p-3 rounded-lg bg-slate-50 border border-slate-100">
-                  <div className="p-1 rounded-full bg-[#7EC636]/20 text-[#6CB428] shrink-0 mt-0.5">
+                  <div className="p-1 rounded-full bg-[#2563EB]/20 text-[#2563EB] shrink-0 mt-0.5">
                     <Check className="w-4 h-4" />
                   </div>
                   <span className="text-sm font-medium text-slate-800">{feature}</span>
@@ -221,7 +221,7 @@ export default function ServicesSection({ onOpenConsultation }) {
                   setSelectedService(null);
                   onOpenConsultation();
                 }}
-                className="flex-1 bg-[#7EC636] hover:bg-[#6CB428] text-[#071126] font-bold py-3.5 px-6 rounded-xl transition-all text-center shadow-md cursor-pointer"
+                className="flex-1 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold py-3.5 px-6 rounded-xl transition-all text-center shadow-md cursor-pointer"
               >
                 Schedule Consultation for {selectedService.title}
               </button>

@@ -41,7 +41,7 @@ export default function Footer() {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#7EC636] hover:text-[#071126] flex items-center justify-center text-slate-300 transition-all duration-200"
+                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#2563EB] hover:text-white flex items-center justify-center text-slate-300 transition-all duration-200"
                 aria-label="LinkedIn"
               >
                 <LinkedInIcon />
@@ -50,7 +50,7 @@ export default function Footer() {
                 href="https://twitter.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#7EC636] hover:text-[#071126] flex items-center justify-center text-slate-300 transition-all duration-200"
+                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#2563EB] hover:text-white flex items-center justify-center text-slate-300 transition-all duration-200"
                 aria-label="Twitter"
               >
                 <TwitterIcon />
@@ -65,12 +65,12 @@ export default function Footer() {
               Quick Links
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm">
-              <li><a href="#home" className="hover:text-[#7EC636] transition-colors">Home</a></li>
-              <li><a href="#services" className="hover:text-[#7EC636] transition-colors">Core Services</a></li>
-              <li><a href="#why-lodi" className="hover:text-[#7EC636] transition-colors">Why Choose US</a></li>
-              <li><a href="#technologies" className="hover:text-[#7EC636] transition-colors">Technology expertise</a></li>
-              <li><a href="#industries" className="hover:text-[#7EC636] transition-colors">Industries</a></li>
-              <li><a href="#cta" className="hover:text-[#7EC636] transition-colors">Call to Action</a></li>
+              <li><a href="#home" className="hover:text-[#2563EB] transition-colors">Home</a></li>
+              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">Core Services</a></li>
+              <li><a href="#why-lodi" className="hover:text-[#2563EB] transition-colors">Why Choose US</a></li>
+              <li><a href="#technologies" className="hover:text-[#2563EB] transition-colors">Technology expertise</a></li>
+              <li><a href="#industries" className="hover:text-[#2563EB] transition-colors">Industries</a></li>
+              <li><a href="#cta" className="hover:text-[#2563EB] transition-colors">Call to Action</a></li>
             </ul>
           </div>
 
@@ -80,12 +80,12 @@ export default function Footer() {
               Core Services Breakdown
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm">
-              <li><a href="#services" className="hover:text-[#7EC636] transition-colors">SAP Services</a></li>
-              <li><a href="#services" className="hover:text-[#7EC636] transition-colors">Cloud & Digital Transformation</a></li>
-              <li><a href="#services" className="hover:text-[#7EC636] transition-colors">Integration Services</a></li>
-              <li><a href="#services" className="hover:text-[#7EC636] transition-colors">Data & Analytics</a></li>
-              <li><a href="#services" className="hover:text-[#7EC636] transition-colors">AI & Automation</a></li>
-              <li><a href="#services" className="hover:text-[#7EC636] transition-colors">Managed Services</a></li>
+              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">SAP Services</a></li>
+              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">Cloud & Digital Transformation</a></li>
+              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">Integration Services</a></li>
+              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">Data & Analytics</a></li>
+              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">AI & Automation</a></li>
+              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">Managed Services</a></li>
             </ul>
           </div>
 
@@ -97,16 +97,16 @@ export default function Footer() {
             </h4>
             <div className="space-y-3 text-xs sm:text-sm">
               <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#7EC636] shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#2563EB] shrink-0 mt-0.5" />
                 <span>LoDi Tech Consulting, Hi-Tech City, Hyderabad, Telangana 500081, India</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#2563EB] shrink-0" />
-                <a href="tel:+914068108888" className="hover:text-[#7EC636] transition-colors">+91 40 6810 8888</a>
+                <a href="tel:+914068108888" className="hover:text-[#2563EB] transition-colors">+91 40 6810 8888</a>
               </div>
               <div className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-[#7EC636] shrink-0" />
-                <a href="mailto:info@loditech.com" className="hover:text-[#7EC636] transition-colors">info@loditech.com</a>
+                <Mail className="w-4 h-4 text-[#2563EB] shrink-0" />
+                <a href="mailto:info@loditech.com" className="hover:text-[#2563EB] transition-colors">info@loditech.com</a>
               </div>
               <div className="flex items-center gap-2.5 text-slate-400">
                 <Clock className="w-4 h-4 text-[#2563EB] shrink-0" />
@@ -131,7 +131,7 @@ export default function Footer() {
             <a href="#security" className="hover:text-slate-300 transition-colors">ISO Security</a>
             <button
               onClick={scrollToTop}
-              className="p-2 rounded-lg bg-slate-800 hover:bg-[#7EC636] hover:text-[#071126] text-slate-300 transition-all ml-2"
+              className="p-2 rounded-lg bg-slate-800 hover:bg-[#2563EB] hover:text-white text-slate-300 transition-all ml-2"
               aria-label="Scroll to top"
             >
               <ArrowUp className="w-4 h-4" />

@@ -21,16 +21,16 @@ export default function TopBar() {
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6">
           <a 
             href="mailto:info@loditech.com" 
-            className="flex items-center gap-1.5 hover:text-[#7EC636] transition-colors group"
+            className="flex items-center gap-1.5 hover:text-[#2563EB] transition-colors group"
           >
-            <Mail className="w-3.5 h-3.5 text-[#7EC636] group-hover:scale-110 transition-transform" />
+            <Mail className="w-3.5 h-3.5 text-[#2563EB] group-hover:scale-110 transition-transform" />
             <span>info@loditech.com</span>
           </a>
           <a 
             href="tel:+914068108888" 
-            className="flex items-center gap-1.5 hover:text-[#7EC636] transition-colors group"
+            className="flex items-center gap-1.5 hover:text-[#2563EB] transition-colors group"
           >
-            <Phone className="w-3.5 h-3.5 text-[#7EC636] group-hover:scale-110 transition-transform" />
+            <Phone className="w-3.5 h-3.5 text-[#2563EB] group-hover:scale-110 transition-transform" />
             <span>+91 40 6810 8888</span>
           </a>
           <div className="hidden lg:flex items-center gap-1.5 text-slate-400">
@@ -50,7 +50,7 @@ export default function TopBar() {
               href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="p-1 hover:text-[#7EC636] hover:bg-slate-800 rounded transition-all"
+              className="p-1 hover:text-[#2563EB] hover:bg-slate-800 rounded transition-all"
               aria-label="LinkedIn"
             >
               <LinkedInIcon />
@@ -59,7 +59,7 @@ export default function TopBar() {
               href="https://twitter.com" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="p-1 hover:text-[#7EC636] hover:bg-slate-800 rounded transition-all"
+              className="p-1 hover:text-[#2563EB] hover:bg-slate-800 rounded transition-all"
               aria-label="Twitter"
             >
               <TwitterIcon />

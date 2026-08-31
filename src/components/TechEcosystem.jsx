@@ -24,10 +24,10 @@ export default function TechEcosystem() {
             <span>Technology Stack</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
-            Technology <span className="text-[#7EC636]">Ecosystem</span>
+            Technology <span className="text-[#2563EB]">Ecosystem</span>
           </h2>
           <p className="text-slate-300 text-sm sm:text-base font-mono bg-[#071126] py-3 px-6 rounded-full border border-slate-800 inline-block shadow-md">
-            <span className="text-[#7EC636]">SAP</span> | <span className="text-white">AWS</span> | <span className="text-[#2563EB]">BTP</span> | <span className="text-white">Integration</span> | <span className="text-[#7EC636]">AI</span> | <span className="text-white">Data & Analytics</span> | <span className="text-[#2563EB]">DevOps</span> | <span className="text-white">Enterprise Applications</span> | <span className="text-[#7EC636]">MES</span>
+            <span className="text-[#2563EB]">SAP</span> | <span className="text-white">AWS</span> | <span className="text-[#2563EB]">BTP</span> | <span className="text-white">Integration</span> | <span className="text-[#2563EB]">AI</span> | <span className="text-white">Data & Analytics</span> | <span className="text-[#2563EB]">DevOps</span> | <span className="text-white">Enterprise Applications</span> | <span className="text-[#2563EB]">MES</span>
           </p>
         </div>
 
@@ -38,17 +38,17 @@ export default function TechEcosystem() {
             return (
               <div
                 key={idx}
-                className="bg-[#071126]/90 border border-slate-800 hover:border-[#7EC636] rounded-2xl p-6 text-left transition-all duration-300 hover:shadow-xl group transform hover:-translate-y-1"
+                className="bg-[#071126]/90 border border-slate-800 hover:border-[#2563EB] rounded-2xl p-6 text-left transition-all duration-300 hover:shadow-xl group transform hover:-translate-y-1"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <div className="p-3 rounded-xl bg-[#081635] text-[#7EC636] group-hover:bg-[#7EC636] group-hover:text-[#071126] transition-colors shadow-md">
+                  <div className="p-3 rounded-xl bg-[#081635] text-[#2563EB] group-hover:bg-[#2563EB] group-hover:text-white transition-colors shadow-md">
                     <TechIcon className="w-6 h-6" />
                   </div>
-                  <span className="text-[11px] font-bold px-2.5 py-1 rounded-md bg-slate-800 text-[#2563EB] group-hover:text-[#7EC636] transition-colors">
+                  <span className="text-[11px] font-bold px-2.5 py-1 rounded-md bg-slate-800 text-[#2563EB] group-hover:text-[#60A5FA] transition-colors">
                     {item.badge}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-white group-hover:text-[#7EC636] transition-colors mb-2">
+                <h3 className="text-xl font-bold text-white group-hover:text-[#2563EB] transition-colors mb-2">
                   {item.name}
                 </h3>
                 <p className="text-xs text-slate-400 leading-relaxed">

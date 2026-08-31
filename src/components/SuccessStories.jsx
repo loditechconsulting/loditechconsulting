@@ -77,13 +77,13 @@ export default function SuccessStories({ onOpenConsultation }) {
         
         {/* Section Title */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#081635] text-[#7EC636] border border-[#7EC636]/30 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#081635] text-[#2563EB] border border-[#2563EB]/30 text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Success Stories</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
             Real Results.{' '}
-            <span className="text-[#7EC636]">Proven Enterprise Impact.</span>
+            <span className="text-[#2563EB]">Proven Enterprise Impact.</span>
           </h2>
           <p className="text-slate-300 text-base sm:text-lg">
             Explore how we’ve empowered industry leaders to modernize their IT infrastructure, optimize SAP environments, and achieve measurable ROI.
@@ -96,7 +96,7 @@ export default function SuccessStories({ onOpenConsultation }) {
             <div
               key={story.id}
               onClick={() => setActiveStory(story)}
-              className="bg-[#081635] border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-[#7EC636] transition-all duration-300 group cursor-pointer flex flex-col justify-between transform hover:-translate-y-1.5"
+              className="bg-[#081635] border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-[#2563EB] transition-all duration-300 group cursor-pointer flex flex-col justify-between transform hover:-translate-y-1.5"
             >
               <div>
                 {/* Thumbnail Image */}
@@ -107,7 +107,7 @@ export default function SuccessStories({ onOpenConsultation }) {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#081635] via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 text-[11px] font-bold px-3 py-1 rounded-full bg-[#071126]/90 text-[#7EC636] border border-[#7EC636]/40 backdrop-blur-md">
+                  <span className="absolute top-4 left-4 text-[11px] font-bold px-3 py-1 rounded-full bg-[#071126]/90 text-[#2563EB] border border-[#2563EB]/40 backdrop-blur-md">
                     {story.category}
                   </span>
                 </div>
@@ -117,7 +117,7 @@ export default function SuccessStories({ onOpenConsultation }) {
                   <span className="text-xs font-medium text-slate-400 block mb-1">
                     {story.client}
                   </span>
-                  <h3 className="text-xl font-bold text-white group-hover:text-[#7EC636] transition-colors mb-4 line-clamp-2">
+                  <h3 className="text-xl font-bold text-white group-hover:text-[#2563EB] transition-colors mb-4 line-clamp-2">
                     {story.title}
                   </h3>
                   <p className="text-xs text-slate-300 line-clamp-2 mb-6">
@@ -128,7 +128,7 @@ export default function SuccessStories({ onOpenConsultation }) {
                   <div className="grid grid-cols-3 gap-2 py-3 px-3 bg-[#071126] rounded-xl border border-slate-800/80 text-center">
                     {story.metrics.map((m, idx) => (
                       <div key={idx}>
-                        <div className="text-base font-extrabold text-[#7EC636]">{m.value}</div>
+                        <div className="text-base font-extrabold text-[#2563EB]">{m.value}</div>
                         <div className="text-[10px] text-slate-400 font-medium">{m.label}</div>
                       </div>
                     ))}
@@ -138,7 +138,7 @@ export default function SuccessStories({ onOpenConsultation }) {
 
               {/* Card Footer Button */}
               <div className="p-6 pt-0">
-                <div className="w-full py-3 px-4 rounded-xl bg-slate-800/60 group-hover:bg-[#7EC636] text-slate-200 group-hover:text-[#071126] font-bold text-xs flex items-center justify-center gap-2 transition-all">
+                <div className="w-full py-3 px-4 rounded-xl bg-slate-800/60 group-hover:bg-[#2563EB] text-slate-200 group-hover:text-white font-bold text-xs flex items-center justify-center gap-2 transition-all">
                   <span>Read Full Case Study</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </div>
@@ -164,7 +164,7 @@ export default function SuccessStories({ onOpenConsultation }) {
 
             {/* Modal Header */}
             <div className="space-y-2 mb-6">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#7EC636]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#2563EB]">
                 {activeStory.category} • Case Study
               </span>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white">{activeStory.title}</h3>
@@ -180,7 +180,7 @@ export default function SuccessStories({ onOpenConsultation }) {
             <div className="grid grid-cols-3 gap-4 p-4 rounded-xl bg-[#071126] border border-slate-800 text-center mb-6">
               {activeStory.metrics.map((m, idx) => (
                 <div key={idx}>
-                  <div className="text-xl sm:text-2xl font-extrabold text-[#7EC636]">{m.value}</div>
+                  <div className="text-xl sm:text-2xl font-extrabold text-[#2563EB]">{m.value}</div>
                   <div className="text-xs text-slate-300 font-medium">{m.label}</div>
                 </div>
               ))}
@@ -194,7 +194,7 @@ export default function SuccessStories({ onOpenConsultation }) {
               </div>
 
               <div>
-                <h4 className="text-base font-bold text-white mb-2 text-[#7EC636]">Our Technical Solution</h4>
+                <h4 className="text-base font-bold text-white mb-2 text-[#2563EB]">Our Technical Solution</h4>
                 <p className="bg-[#071126]/60 p-4 rounded-xl border border-slate-800">{activeStory.solution}</p>
               </div>
 
@@ -203,7 +203,7 @@ export default function SuccessStories({ onOpenConsultation }) {
                 <div className="space-y-2">
                   {activeStory.results.map((res, i) => (
                     <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-slate-900/80 border border-slate-800">
-                      <CheckCircle className="w-5 h-5 text-[#7EC636] shrink-0 mt-0.5" />
+                      <CheckCircle className="w-5 h-5 text-[#2563EB] shrink-0 mt-0.5" />
                       <span className="text-sm text-slate-200">{res}</span>
                     </div>
                   ))}
@@ -218,7 +218,7 @@ export default function SuccessStories({ onOpenConsultation }) {
                   setActiveStory(null);
                   onOpenConsultation();
                 }}
-                className="flex-1 bg-[#7EC636] hover:bg-[#6CB428] text-[#071126] font-bold py-3.5 px-6 rounded-xl transition-all text-center shadow-lg cursor-pointer"
+                className="flex-1 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold py-3.5 px-6 rounded-xl transition-all text-center shadow-lg cursor-pointer"
               >
                 Transform Your Enterprise Like This →
               </button>

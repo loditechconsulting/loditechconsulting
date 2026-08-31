@@ -60,7 +60,7 @@ export default function IndustriesSection({ onOpenConsultation }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#071126] text-[#7EC636] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#071126] text-[#2563EB] text-xs font-bold uppercase tracking-wider">
             <span>Industries We Serve</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071126] tracking-tight">
@@ -78,14 +78,14 @@ export default function IndustriesSection({ onOpenConsultation }) {
             return (
               <div
                 key={idx}
-                className="bg-slate-50 border border-slate-200 rounded-2xl p-7 hover:bg-white hover:border-[#7EC636] hover:shadow-xl transition-all duration-300 group flex flex-col justify-between text-left transform hover:-translate-y-1"
+                className="bg-slate-50 border border-slate-200 rounded-2xl p-7 hover:bg-white hover:border-[#2563EB] hover:shadow-xl transition-all duration-300 group flex flex-col justify-between text-left transform hover:-translate-y-1"
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <div className="w-12 h-12 rounded-xl bg-[#071126] text-[#7EC636] flex items-center justify-center group-hover:bg-[#2563EB] group-hover:text-white transition-colors shadow-md">
+                    <div className="w-12 h-12 rounded-xl bg-[#071126] text-[#2563EB] flex items-center justify-center group-hover:bg-[#2563EB] group-hover:text-white transition-colors shadow-md">
                       <IndIcon className="w-6 h-6" />
                     </div>
-                    <span className="text-xs font-bold text-[#7EC636] bg-[#071126] px-3 py-1 rounded-full">
+                    <span className="text-xs font-bold text-[#2563EB] bg-[#071126] px-3 py-1 rounded-full">
                       {ind.stats}
                     </span>
                   </div>
@@ -104,7 +104,7 @@ export default function IndustriesSection({ onOpenConsultation }) {
                 <div className="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
                   <button
                     onClick={onOpenConsultation}
-                    className="text-xs font-bold text-[#2563EB] group-hover:text-[#7EC636] transition-colors flex items-center gap-1"
+                    className="text-xs font-bold text-[#2563EB] group-hover:text-[#1D4ED8] transition-colors flex items-center gap-1"
                   >
                     <span>Discuss Sector Solution</span>
                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

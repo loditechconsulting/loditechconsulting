@@ -17,7 +17,7 @@ export default function OurApproach({ onOpenConsultation }) {
       subtitle: 'Architecture & Solution',
       desc: 'Architecting high-performance SAP, cloud, API integration, and security blueprints.',
       icon: Compass,
-      color: 'border-[#7EC636] text-[#7EC636] bg-[#7EC636]/10'
+      color: 'border-[#2563EB] text-[#2563EB] bg-[#2563EB]/10'
     },
     {
       number: '03',
@@ -49,22 +49,22 @@ export default function OurApproach({ onOpenConsultation }) {
     <section id="approach" className="py-20 lg:py-28 bg-[#081635] text-white relative overflow-hidden border-t border-slate-800">
       
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-r from-[#2563EB]/10 to-[#7EC636]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-r from-[#2563EB]/10 to-[#60A5FA]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#071126] text-[#7EC636] border border-[#7EC636]/30 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#071126] text-[#2563EB] border border-[#2563EB]/30 text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Complete Technology Lifecycle</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
-            Our <span className="text-[#7EC636]">Approach</span>
+            Our <span className="text-[#2563EB]">Approach</span>
           </h2>
 
-          <div className="text-sm sm:text-base font-bold text-[#7EC636] flex flex-wrap items-center justify-center gap-2 py-2 px-4 bg-[#071126] rounded-full border border-slate-800 max-w-2xl mx-auto shadow-md">
+          <div className="text-sm sm:text-base font-bold text-[#2563EB] flex flex-wrap items-center justify-center gap-2 py-2 px-4 bg-[#071126] rounded-full border border-slate-800 max-w-2xl mx-auto shadow-md">
             <span>Discover</span>
             <span className="text-white">➔</span>
             <span>Design</span>
@@ -88,12 +88,12 @@ export default function OurApproach({ onOpenConsultation }) {
             return (
               <div
                 key={idx}
-                className="bg-[#071126] border border-slate-800 hover:border-[#7EC636] rounded-2xl p-6 text-left transition-all duration-300 shadow-xl hover:shadow-2xl group flex flex-col justify-between transform hover:-translate-y-1.5 relative z-10"
+                className="bg-[#071126] border border-slate-800 hover:border-[#2563EB] rounded-2xl p-6 text-left transition-all duration-300 shadow-xl hover:shadow-2xl group flex flex-col justify-between transform hover:-translate-y-1.5 relative z-10"
               >
                 <div>
                   {/* Step Number & Icon */}
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-2xl font-black text-slate-600 group-hover:text-[#7EC636] transition-colors font-mono">
+                    <span className="text-2xl font-black text-slate-600 group-hover:text-[#2563EB] transition-colors font-mono">
                       {step.number}
                     </span>
                     <div className={`w-10 h-10 rounded-xl border flex items-center justify-center ${step.color} group-hover:scale-110 transition-transform`}>
@@ -102,7 +102,7 @@ export default function OurApproach({ onOpenConsultation }) {
                   </div>
 
                   {/* Title & Subtitle */}
-                  <h3 className="text-xl font-bold text-white group-hover:text-[#7EC636] transition-colors mb-1">
+                  <h3 className="text-xl font-bold text-white group-hover:text-[#2563EB] transition-colors mb-1">
                     {step.title}
                   </h3>
                   <div className="text-xs font-semibold text-slate-400 mb-3">
@@ -115,7 +115,7 @@ export default function OurApproach({ onOpenConsultation }) {
                 </div>
 
                 {/* Arrow connector indicator */}
-                <div className="mt-6 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-bold text-slate-400 group-hover:text-[#7EC636] transition-colors">
+                <div className="mt-6 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-bold text-slate-400 group-hover:text-[#2563EB] transition-colors">
                   <span>Phase {step.number}</span>
                   {idx < steps.length - 1 && (
                     <ArrowRight className="w-3.5 h-3.5 hidden lg:block group-hover:translate-x-1 transition-transform" />
@@ -129,7 +129,7 @@ export default function OurApproach({ onOpenConsultation }) {
         {/* Callout box */}
         <div className="mt-14 p-6 rounded-2xl bg-[#071126]/80 border border-slate-800 text-center flex flex-col sm:flex-row items-center justify-between gap-4 max-w-4xl mx-auto">
           <div className="text-left">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#7EC636]">Lifecycle Support</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-[#2563EB]">Lifecycle Support</span>
             <div className="text-base font-bold text-white">LoDi supports your entire technology lifecycle from assessment to 24/7 support.</div>
           </div>
           <button

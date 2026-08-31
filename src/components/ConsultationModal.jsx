@@ -61,12 +61,12 @@ export default function ConsultationModal({ isOpen, onClose }) {
           <div>
             {/* Modal Header */}
             <div className="space-y-2 mb-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#071126] border border-[#7EC636]/40 text-[#7EC636] text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#071126] border border-[#2563EB]/40 text-[#2563EB] text-xs font-bold uppercase tracking-wider">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Free Enterprise Consultation</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-                Talk to Our <span className="text-[#7EC636]">IT Experts</span>
+                Talk to Our <span className="text-[#2563EB]">IT Experts</span>
               </h3>
               <p className="text-xs sm:text-sm text-slate-300">
                 Fill out the form below to schedule a 30-minute technical discovery session with a senior enterprise architect.
@@ -89,7 +89,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
                     value={formData.fullName}
                     onChange={handleChange}
                     placeholder="e.g. Rahul Sharma"
-                    className="w-full bg-[#071126] border border-slate-700 focus:border-[#7EC636] rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition-colors"
+                    className="w-full bg-[#071126] border border-slate-700 focus:border-[#2563EB] rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition-colors"
                   />
                 </div>
 
@@ -104,7 +104,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="rahul@company.com"
-                    className="w-full bg-[#071126] border border-slate-700 focus:border-[#7EC636] rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition-colors"
+                    className="w-full bg-[#071126] border border-slate-700 focus:border-[#2563EB] rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition-colors"
                   />
                 </div>
               </div>
@@ -121,7 +121,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+91 98765 43210"
-                    className="w-full bg-[#071126] border border-slate-700 focus:border-[#7EC636] rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition-colors"
+                    className="w-full bg-[#071126] border border-slate-700 focus:border-[#2563EB] rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition-colors"
                   />
                 </div>
 
@@ -135,7 +135,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
                     value={formData.company}
                     onChange={handleChange}
                     placeholder="Enterprise Corp"
-                    className="w-full bg-[#071126] border border-slate-700 focus:border-[#7EC636] rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition-colors"
+                    className="w-full bg-[#071126] border border-slate-700 focus:border-[#2563EB] rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition-colors"
                   />
                 </div>
               </div>
@@ -149,7 +149,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
                   name="service"
                   value={formData.service}
                   onChange={handleChange}
-                  className="w-full bg-[#071126] border border-slate-700 focus:border-[#7EC636] rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors"
+                  className="w-full bg-[#071126] border border-slate-700 focus:border-[#2563EB] rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors"
                 >
                   <option value="SAP S/4HANA & Data Archiving">SAP S/4HANA & Data Archiving</option>
                   <option value="Cloud Transformation (AWS/Azure)">Cloud Transformation (AWS/Azure)</option>
@@ -173,7 +173,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Describe your current system landscape, timeline, or key objectives..."
-                  className="w-full bg-[#071126] border border-slate-700 focus:border-[#7EC636] rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition-colors resize-none"
+                  className="w-full bg-[#071126] border border-slate-700 focus:border-[#2563EB] rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition-colors resize-none"
                 />
               </div>
 
@@ -182,7 +182,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#7EC636] hover:bg-[#6CB428] text-[#071126] font-extrabold text-base py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70"
+                  className="w-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-extrabold text-base py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70"
                 >
                   {isSubmitting ? (
                     <span>Submitting Request...</span>
@@ -204,20 +204,20 @@ export default function ConsultationModal({ isOpen, onClose }) {
         ) : (
           /* Submission Success View */
           <div className="text-center py-8 space-y-6 animate-fadeIn">
-            <div className="w-20 h-20 rounded-full bg-[#7EC636]/20 text-[#7EC636] flex items-center justify-center mx-auto border-2 border-[#7EC636]">
+            <div className="w-20 h-20 rounded-full bg-[#2563EB]/20 text-[#2563EB] flex items-center justify-center mx-auto border-2 border-[#2563EB]">
               <CheckCircle2 className="w-10 h-10" />
             </div>
 
             <div className="space-y-2">
               <h3 className="text-2xl font-extrabold text-white">Consultation Request Received!</h3>
               <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-                Thank you, <span className="text-[#7EC636] font-bold">{formData.fullName}</span>. A senior enterprise architect from LoDi Tech will review your submission and contact you within <span className="font-bold text-white">24 hours</span>.
+                Thank you, <span className="text-[#2563EB] font-bold">{formData.fullName}</span>. A senior enterprise architect from LoDi Tech will review your submission and contact you within <span className="font-bold text-white">24 hours</span>.
               </p>
             </div>
 
             <div className="bg-[#071126] p-4 rounded-xl border border-slate-800 text-xs text-slate-400 max-w-md mx-auto space-y-1">
               <div>Confirmation sent to: <span className="text-white font-medium">{formData.email}</span></div>
-              <div>Selected Focus: <span className="text-[#7EC636] font-medium">{formData.service}</span></div>
+              <div>Selected Focus: <span className="text-[#2563EB] font-medium">{formData.service}</span></div>
             </div>
 
             <div>

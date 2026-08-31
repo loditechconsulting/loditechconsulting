@@ -45,7 +45,7 @@ export default function Navbar({ onOpenConsultation }) {
             <a
               key={link.name}
               href={link.href}
-              className="text-xs xl:text-sm font-semibold text-slate-300 hover:text-[#7EC636] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#7EC636] hover:after:w-full after:transition-all after:duration-300"
+              className="text-xs xl:text-sm font-semibold text-slate-300 hover:text-[#2563EB] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#2563EB] hover:after:w-full after:transition-all after:duration-300"
             >
               {link.name}
             </a>
@@ -81,7 +81,7 @@ export default function Navbar({ onOpenConsultation }) {
               key={link.name}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2 rounded-md text-sm font-semibold text-slate-200 hover:text-[#7EC636] hover:bg-slate-800/60 transition-all text-left"
+              className="block px-3 py-2 rounded-md text-sm font-semibold text-slate-200 hover:text-[#2563EB] hover:bg-slate-800/60 transition-all text-left"
             >
               {link.name}
             </a>

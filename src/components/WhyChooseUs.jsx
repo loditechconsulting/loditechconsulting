@@ -7,7 +7,7 @@ export default function WhyChooseUs({ onOpenConsultation }) {
       icon: Award,
       title: 'Technology Expertise',
       description: 'Senior certified SAP, AWS, and Integration architects bringing deep technical capabilities to every engagement.',
-      color: 'text-[#7EC636]'
+      color: 'text-[#2563EB]'
     },
     {
       icon: Target,
@@ -25,7 +25,7 @@ export default function WhyChooseUs({ onOpenConsultation }) {
       icon: HeartHandshake,
       title: 'Long-term Partnership',
       description: 'Dedicated long-term collaboration offering ongoing support, maintenance, and continuous optimization.',
-      color: 'text-[#7EC636]'
+      color: 'text-[#2563EB]'
     }
   ];
 
@@ -34,31 +34,31 @@ export default function WhyChooseUs({ onOpenConsultation }) {
       
       {/* Background ambient glow */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#2563EB]/10 rounded-full blur-3xl pointer-events-none -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#7EC636]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#2563EB]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Top Header Tagline Banner */}
         <div className="mb-12 inline-flex flex-wrap items-center justify-center gap-2 sm:gap-4 p-3.5 rounded-full bg-[#081635] border border-slate-700 text-xs sm:text-sm font-bold text-slate-200 shadow-lg">
-          <span className="text-[#7EC636]">Technology Expertise</span>
+          <span className="text-[#2563EB]">Technology Expertise</span>
           <span className="text-slate-600">|</span>
           <span className="text-[#2563EB]">Business Understanding</span>
           <span className="text-slate-600">|</span>
           <span className="text-amber-400">Faster Delivery</span>
           <span className="text-slate-600">|</span>
-          <span className="text-[#7EC636]">Long-term partnership</span>
+          <span className="text-[#2563EB]">Long-term partnership</span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Commitment Narrative */}
           <div className="lg:col-span-5 text-left space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#081635] border border-[#7EC636]/40 text-[#7EC636] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#081635] border border-[#2563EB]/40 text-[#2563EB] text-xs font-bold uppercase tracking-wider">
               <span>Why LoDi?</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
-              Why <span className="text-[#7EC636]">LoDi?</span>
+              Why <span className="text-[#2563EB]">LoDi?</span>
             </h2>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
@@ -67,15 +67,15 @@ export default function WhyChooseUs({ onOpenConsultation }) {
 
             <div className="space-y-3 pt-2">
               <div className="flex items-center gap-3 text-slate-200 text-sm font-medium">
-                <CheckCircle2 className="w-5 h-5 text-[#7EC636] shrink-0" />
+                <CheckCircle2 className="w-5 h-5 text-[#2563EB] shrink-0" />
                 <span>Deep Enterprise Technology Expertise</span>
               </div>
               <div className="flex items-center gap-3 text-slate-200 text-sm font-medium">
-                <CheckCircle2 className="w-5 h-5 text-[#7EC636] shrink-0" />
+                <CheckCircle2 className="w-5 h-5 text-[#2563EB] shrink-0" />
                 <span>Practical Business Understanding</span>
               </div>
               <div className="flex items-center gap-3 text-slate-200 text-sm font-medium">
-                <CheckCircle2 className="w-5 h-5 text-[#7EC636] shrink-0" />
+                <CheckCircle2 className="w-5 h-5 text-[#2563EB] shrink-0" />
                 <span>Measurable Business Value & Faster Delivery</span>
               </div>
             </div>
@@ -97,13 +97,13 @@ export default function WhyChooseUs({ onOpenConsultation }) {
               return (
                 <div 
                   key={idx}
-                  className="p-6 rounded-2xl bg-[#081635]/80 border border-slate-800 hover:border-[#7EC636] transition-all duration-300 shadow-lg hover:shadow-2xl group flex flex-col justify-between"
+                  className="p-6 rounded-2xl bg-[#081635]/80 border border-slate-800 hover:border-[#2563EB] transition-all duration-300 shadow-lg hover:shadow-2xl group flex flex-col justify-between"
                 >
                   <div>
                     <div className={`w-12 h-12 rounded-xl bg-slate-900 flex items-center justify-center mb-4 ${pillar.color} group-hover:scale-110 transition-transform`}>
                       <IconComp className="w-6 h-6" />
                     </div>
-                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#7EC636] transition-colors">
+                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#2563EB] transition-colors">
                       {pillar.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">

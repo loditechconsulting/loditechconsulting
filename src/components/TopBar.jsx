@@ -15,42 +15,43 @@ const TwitterIcon = (props) => (
 
 export default function TopBar() {
   return (
-    <div className="bg-[#071126] border-b border-slate-800/80 text-xs text-slate-300 py-2.5 px-4 sm:px-6 lg:px-8 transition-colors duration-200">
+    <div className="bg-[#F5F7FA] border-b border-slate-200 text-xs text-[#667085] py-2.5 px-4 sm:px-6 lg:px-8 transition-colors duration-200">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 md:gap-4">
+        
         {/* Contact info items */}
-        <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6">
+        <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6 font-medium">
           <a 
             href="mailto:info@loditech.com" 
-            className="flex items-center gap-1.5 hover:text-[#2563EB] transition-colors group"
+            className="flex items-center gap-1.5 hover:text-[#3F6EB6] transition-colors group"
           >
-            <Mail className="w-3.5 h-3.5 text-[#2563EB] group-hover:scale-110 transition-transform" />
+            <Mail className="w-3.5 h-3.5 text-[#3F6EB6] group-hover:scale-110 transition-transform" />
             <span>info@loditech.com</span>
           </a>
           <a 
             href="tel:+914068108888" 
-            className="flex items-center gap-1.5 hover:text-[#2563EB] transition-colors group"
+            className="flex items-center gap-1.5 hover:text-[#3F6EB6] transition-colors group"
           >
-            <Phone className="w-3.5 h-3.5 text-[#2563EB] group-hover:scale-110 transition-transform" />
+            <Phone className="w-3.5 h-3.5 text-[#3F6EB6] group-hover:scale-110 transition-transform" />
             <span>+91 40 6810 8888</span>
           </a>
-          <div className="hidden lg:flex items-center gap-1.5 text-slate-400">
-            <MapPin className="w-3.5 h-3.5 text-[#2563EB]" />
-            <span>Hyderabad, Telangana, India</span>
+          <div className="hidden lg:flex items-center gap-1.5 text-[#667085]">
+            <MapPin className="w-3.5 h-3.5 text-[#3F6EB6]" />
+            <span>Hi-Tech City, Hyderabad, India</span>
           </div>
         </div>
 
         {/* Business hours & Social links */}
-        <div className="flex items-center gap-4 sm:gap-6">
-          <div className="hidden sm:flex items-center gap-1.5 text-slate-400">
-            <Clock className="w-3.5 h-3.5 text-[#2563EB]" />
+        <div className="flex items-center gap-4 sm:gap-6 font-medium">
+          <div className="hidden sm:flex items-center gap-1.5 text-[#667085]">
+            <Clock className="w-3.5 h-3.5 text-[#3F6EB6]" />
             <span>Mon - Fri: 9:00 AM - 6:00 PM IST</span>
           </div>
-          <div className="flex items-center gap-3 border-l border-slate-700 pl-4">
+          <div className="flex items-center gap-3 border-l border-slate-300 pl-4">
             <a 
               href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="p-1 hover:text-[#2563EB] hover:bg-slate-800 rounded transition-all"
+              className="p-1 text-[#667085] hover:text-[#3F6EB6] hover:bg-white rounded transition-all"
               aria-label="LinkedIn"
             >
               <LinkedInIcon />
@@ -59,15 +60,15 @@ export default function TopBar() {
               href="https://twitter.com" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="p-1 hover:text-[#2563EB] hover:bg-slate-800 rounded transition-all"
+              className="p-1 text-[#667085] hover:text-[#3F6EB6] hover:bg-white rounded transition-all"
               aria-label="Twitter"
             >
               <TwitterIcon />
             </a>
           </div>
         </div>
+
       </div>
     </div>
   );
 }
-

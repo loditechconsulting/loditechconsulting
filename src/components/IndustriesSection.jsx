@@ -1,5 +1,5 @@
 import React from 'react';
-import { Factory, ShoppingBag, Stethoscope, Zap, Truck, Briefcase, Landmark, ChevronRight } from 'lucide-react';
+import { Factory, ShoppingBag, Stethoscope, Zap, Truck, Briefcase, Landmark, ChevronRight, Layers } from 'lucide-react';
 
 export default function IndustriesSection({ onOpenConsultation }) {
   const industries = [
@@ -55,18 +55,24 @@ export default function IndustriesSection({ onOpenConsultation }) {
   ];
 
   return (
-    <section id="industries" className="py-20 lg:py-28 bg-[#FFFFFF] text-slate-900 relative border-t border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="industries" className="py-20 lg:py-28 bg-[#F5F7FA] text-slate-900 relative border-t border-slate-200 overflow-hidden">
+      
+      {/* Background ambient lighting */}
+      <div className="absolute top-1/4 -right-20 w-96 h-96 bg-[#3F6EB6]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 -left-20 w-96 h-96 bg-[#3F6EB6]/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#071126] text-[#2563EB] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-[#3F6EB6] text-xs font-bold uppercase tracking-wider shadow-sm">
+            <Layers className="w-3.5 h-3.5 text-[#3F6EB6]" />
             <span>Industries We Serve</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071126] tracking-tight">
-            Tailored Solutions for <span className="text-[#2563EB]">Vertical Enterprise Sectors</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#172033] tracking-tight">
+            Tailored Solutions for <span className="text-[#3F6EB6]">Vertical Enterprise Sectors</span>
           </h2>
-          <p className="text-slate-600 text-base sm:text-lg">
+          <p className="text-[#667085] text-base sm:text-lg leading-relaxed font-normal">
             Every industry has unique operational and regulatory needs. We deliver domain-specific SAP and cloud solutions engineered for compliance and speed.
           </p>
         </div>
@@ -78,33 +84,33 @@ export default function IndustriesSection({ onOpenConsultation }) {
             return (
               <div
                 key={idx}
-                className="bg-slate-50 border border-slate-200 rounded-2xl p-7 hover:bg-white hover:border-[#2563EB] hover:shadow-xl transition-all duration-300 group flex flex-col justify-between text-left transform hover:-translate-y-1"
+                className="bg-white border border-slate-200/80 hover:border-[#3F6EB6] rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between text-left transform hover:-translate-y-1.5"
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <div className="w-12 h-12 rounded-xl bg-[#071126] text-[#2563EB] flex items-center justify-center group-hover:bg-[#2563EB] group-hover:text-white transition-colors shadow-md">
+                    <div className="w-12 h-12 rounded-xl bg-[#3F6EB6]/10 text-[#3F6EB6] flex items-center justify-center group-hover:bg-[#3F6EB6] group-hover:text-white transition-colors shadow-sm">
                       <IndIcon className="w-6 h-6" />
                     </div>
-                    <span className="text-xs font-bold text-[#2563EB] bg-[#071126] px-3 py-1 rounded-full">
+                    <span className="text-xs font-bold text-[#3F6EB6] bg-[#3F6EB6]/10 border border-[#3F6EB6]/20 px-3 py-1 rounded-full">
                       {ind.stats}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-[#071126] group-hover:text-[#2563EB] transition-colors mb-1">
+                  <h3 className="text-xl font-bold text-[#172033] group-hover:text-[#3F6EB6] transition-colors mb-1">
                     {ind.name}
                   </h3>
-                  <p className="text-xs font-semibold text-slate-500 mb-3">
+                  <p className="text-xs font-semibold text-[#667085] mb-3">
                     {ind.tagline}
                   </p>
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <p className="text-sm text-[#667085] leading-relaxed font-normal">
                     {ind.desc}
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
                   <button
                     onClick={onOpenConsultation}
-                    className="text-xs font-bold text-[#2563EB] group-hover:text-[#1D4ED8] transition-colors flex items-center gap-1"
+                    className="text-xs font-bold text-[#3F6EB6] hover:text-[#325B99] transition-colors flex items-center gap-1 cursor-pointer"
                   >
                     <span>Discuss Sector Solution</span>
                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

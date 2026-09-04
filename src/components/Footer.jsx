@@ -20,7 +20,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#071126] text-slate-400 border-t border-slate-800/80 text-sm">
+    <footer className="bg-[#172033] text-[#667085] border-t border-slate-800/80 text-sm">
       
       {/* Main 4-Column Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -29,7 +29,7 @@ export default function Footer() {
           {/* Column 1: Brand & Narrative */}
           <div className="lg:col-span-4 space-y-5 text-left">
             <a href="#home" className="inline-block" aria-label="LoDi Tech Consulting Home">
-              <Logo variant="dark" className="h-12 w-auto" />
+              <Logo variant="dark" className="h-14 sm:h-16 w-auto" />
             </a>
 
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
@@ -41,7 +41,7 @@ export default function Footer() {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#2563EB] hover:text-white flex items-center justify-center text-slate-300 transition-all duration-200"
+                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#3F6EB6] hover:text-white flex items-center justify-center text-slate-300 transition-all duration-200"
                 aria-label="LinkedIn"
               >
                 <LinkedInIcon />
@@ -50,7 +50,7 @@ export default function Footer() {
                 href="https://twitter.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#2563EB] hover:text-white flex items-center justify-center text-slate-300 transition-all duration-200"
+                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#3F6EB6] hover:text-white flex items-center justify-center text-slate-300 transition-all duration-200"
                 aria-label="Twitter"
               >
                 <TwitterIcon />
@@ -58,19 +58,18 @@ export default function Footer() {
             </div>
           </div>
 
-
           {/* Column 2: Quick Links */}
           <div className="lg:col-span-2 text-left space-y-4">
             <h4 className="text-sm font-bold uppercase tracking-wider text-white border-b border-slate-800 pb-2">
               Quick Links
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm">
-              <li><a href="#home" className="hover:text-[#2563EB] transition-colors">Home</a></li>
-              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">Core Services</a></li>
-              <li><a href="#why-lodi" className="hover:text-[#2563EB] transition-colors">Why Choose US</a></li>
-              <li><a href="#technologies" className="hover:text-[#2563EB] transition-colors">Technology expertise</a></li>
-              <li><a href="#industries" className="hover:text-[#2563EB] transition-colors">Industries</a></li>
-              <li><a href="#cta" className="hover:text-[#2563EB] transition-colors">Call to Action</a></li>
+              <li><a href="#home" className="hover:text-[#3F6EB6] transition-colors">Home</a></li>
+              <li><a href="#services" className="hover:text-[#3F6EB6] transition-colors">Core Services</a></li>
+              <li><a href="#why-lodi" className="hover:text-[#3F6EB6] transition-colors">Why Choose Us</a></li>
+              <li><a href="#technologies" className="hover:text-[#3F6EB6] transition-colors">Technology Expertise</a></li>
+              <li><a href="#industries" className="hover:text-[#3F6EB6] transition-colors">Industries</a></li>
+              <li><a href="#cta" className="hover:text-[#3F6EB6] transition-colors">Contact Us</a></li>
             </ul>
           </div>
 
@@ -80,12 +79,12 @@ export default function Footer() {
               Core Services Breakdown
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm">
-              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">SAP Services</a></li>
-              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">Cloud & Digital Transformation</a></li>
-              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">Integration Services</a></li>
-              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">Data & Analytics</a></li>
-              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">AI & Automation</a></li>
-              <li><a href="#services" className="hover:text-[#2563EB] transition-colors">Managed Services</a></li>
+              <li><a href="#services" className="hover:text-[#3F6EB6] transition-colors">SAP Services</a></li>
+              <li><a href="#services" className="hover:text-[#3F6EB6] transition-colors">Cloud & Digital Transformation</a></li>
+              <li><a href="#services" className="hover:text-[#3F6EB6] transition-colors">Integration Services</a></li>
+              <li><a href="#services" className="hover:text-[#3F6EB6] transition-colors">Data & Analytics</a></li>
+              <li><a href="#services" className="hover:text-[#3F6EB6] transition-colors">AI & Automation</a></li>
+              <li><a href="#services" className="hover:text-[#3F6EB6] transition-colors">Managed Services</a></li>
             </ul>
           </div>
 
@@ -97,19 +96,19 @@ export default function Footer() {
             </h4>
             <div className="space-y-3 text-xs sm:text-sm">
               <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#2563EB] shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#3F6EB6] shrink-0 mt-0.5" />
                 <span>LoDi Tech Consulting, Hi-Tech City, Hyderabad, Telangana 500081, India</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#2563EB] shrink-0" />
-                <a href="tel:+914068108888" className="hover:text-[#2563EB] transition-colors">+91 40 6810 8888</a>
+                <Phone className="w-4 h-4 text-[#3F6EB6] shrink-0" />
+                <a href="tel:+914068108888" className="hover:text-[#3F6EB6] transition-colors">+91 40 6810 8888</a>
               </div>
               <div className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-[#2563EB] shrink-0" />
-                <a href="mailto:info@loditech.com" className="hover:text-[#2563EB] transition-colors">info@loditech.com</a>
+                <Mail className="w-4 h-4 text-[#3F6EB6] shrink-0" />
+                <a href="mailto:info@loditech.com" className="hover:text-[#3F6EB6] transition-colors">info@loditech.com</a>
               </div>
               <div className="flex items-center gap-2.5 text-slate-400">
-                <Clock className="w-4 h-4 text-[#2563EB] shrink-0" />
+                <Clock className="w-4 h-4 text-[#3F6EB6] shrink-0" />
                 <span>Mon - Fri: 9:00 AM - 6:00 PM IST</span>
               </div>
             </div>
@@ -119,10 +118,10 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-slate-800/80 bg-[#050c1b] py-6 px-4 sm:px-6 lg:px-8">
+      <div className="border-t border-slate-800/80 bg-[#121a2b] py-6 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div className="flex items-center gap-2">
-            <span>© 2026 LoDi Tech Consulting. All rights reserved.</span>
+            <span>© 2026 LoDi Tech Consulting Private Limited. All rights reserved.</span>
           </div>
 
           <div className="flex items-center gap-6">
@@ -131,7 +130,7 @@ export default function Footer() {
             <a href="#security" className="hover:text-slate-300 transition-colors">ISO Security</a>
             <button
               onClick={scrollToTop}
-              className="p-2 rounded-lg bg-slate-800 hover:bg-[#2563EB] hover:text-white text-slate-300 transition-all ml-2"
+              className="p-2 rounded-lg bg-slate-800 hover:bg-[#3F6EB6] hover:text-white text-slate-300 transition-all ml-2 cursor-pointer"
               aria-label="Scroll to top"
             >
               <ArrowUp className="w-4 h-4" />

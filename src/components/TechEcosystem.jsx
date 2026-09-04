@@ -15,19 +15,20 @@ export default function TechEcosystem() {
   ];
 
   return (
-    <section id="technologies" className="py-20 lg:py-28 bg-[#081635] text-white relative">
+    <section id="technologies" className="py-20 lg:py-28 bg-[#F5F7FA] text-slate-900 relative border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Title */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#071126] text-[#2563EB] border border-[#2563EB]/30 text-xs font-bold uppercase tracking-wider">
-            <span>Technology Stack</span>
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-[#3F6EB6] text-xs font-bold uppercase tracking-wider shadow-sm">
+            <Cpu className="w-3.5 h-3.5 text-[#3F6EB6]" />
+            <span>Technology Stack & Partners</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
-            Technology <span className="text-[#2563EB]">Ecosystem</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#172033] tracking-tight">
+            Enterprise <span className="text-[#3F6EB6]">Technology Ecosystem</span>
           </h2>
-          <p className="text-slate-300 text-sm sm:text-base font-mono bg-[#071126] py-3 px-6 rounded-full border border-slate-800 inline-block shadow-md">
-            <span className="text-[#2563EB]">SAP</span> | <span className="text-white">AWS</span> | <span className="text-[#2563EB]">BTP</span> | <span className="text-white">Integration</span> | <span className="text-[#2563EB]">AI</span> | <span className="text-white">Data & Analytics</span> | <span className="text-[#2563EB]">DevOps</span> | <span className="text-white">Enterprise Applications</span> | <span className="text-[#2563EB]">MES</span>
+          <p className="text-base sm:text-lg text-[#667085] leading-relaxed font-normal">
+            Certified expertise across market-leading enterprise platforms, cloud providers, databases, and AI frameworks.
           </p>
         </div>
 
@@ -38,25 +39,32 @@ export default function TechEcosystem() {
             return (
               <div
                 key={idx}
-                className="bg-[#071126]/90 border border-slate-800 hover:border-[#2563EB] rounded-2xl p-6 text-left transition-all duration-300 hover:shadow-xl group transform hover:-translate-y-1"
+                className="bg-white border border-slate-200/90 hover:border-[#3F6EB6] rounded-2xl p-6 text-left transition-all duration-300 shadow-sm hover:shadow-xl group transform hover:-translate-y-1"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <div className="p-3 rounded-xl bg-[#081635] text-[#2563EB] group-hover:bg-[#2563EB] group-hover:text-white transition-colors shadow-md">
+                  <div className="p-3 rounded-xl bg-[#F8FAFC] border border-slate-200 text-[#3F6EB6] group-hover:bg-[#3F6EB6] group-hover:text-white group-hover:border-[#3F6EB6] transition-all shadow-xs">
                     <TechIcon className="w-6 h-6" />
                   </div>
-                  <span className="text-[11px] font-bold px-2.5 py-1 rounded-md bg-slate-800 text-[#2563EB] group-hover:text-[#60A5FA] transition-colors">
+                  <span className="text-[11px] font-bold px-2.5 py-1 rounded-md bg-[#3F6EB6]/10 border border-[#3F6EB6]/20 text-[#3F6EB6] transition-colors">
                     {item.badge}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-white group-hover:text-[#2563EB] transition-colors mb-2">
+                <h3 className="text-xl font-bold text-[#172033] group-hover:text-[#3F6EB6] transition-colors mb-2">
                   {item.name}
                 </h3>
-                <p className="text-xs text-slate-400 leading-relaxed">
+                <p className="text-xs text-[#667085] leading-relaxed font-normal">
                   {item.desc}
                 </p>
               </div>
             );
           })}
+        </div>
+
+        {/* Summary Footer */}
+        <div className="mt-12 text-center">
+          <p className="text-xs sm:text-sm text-[#667085] font-medium">
+            💡 Modernizing legacy enterprise monoliths into agile, API-driven cloud architectures.
+          </p>
         </div>
 
       </div>

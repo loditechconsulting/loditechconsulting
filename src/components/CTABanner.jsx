@@ -3,28 +3,28 @@ import { Rocket, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export default function CTABanner({ onOpenConsultation }) {
   return (
-    <section id="cta" className="py-16 lg:py-24 bg-gradient-to-b from-[#071126] via-[#081635] to-[#071126] relative overflow-hidden border-t border-slate-800">
+    <section id="cta" className="py-16 lg:py-24 bg-[#FFFFFF] relative overflow-hidden border-t border-slate-200">
       
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-r from-[#2563EB]/20 to-[#3B82F6]/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-r from-blue-100 to-indigo-100 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <div className="p-8 sm:p-12 lg:p-16 rounded-3xl bg-[#081635]/90 border border-slate-700/80 shadow-2xl backdrop-blur-xl space-y-6">
+        <div className="p-8 sm:p-12 lg:p-16 rounded-3xl bg-[#F8FAFC] border border-slate-200 shadow-xl space-y-6">
           
           {/* Rocket Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#071126] border border-[#2563EB]/40 text-[#2563EB] text-xs font-bold uppercase tracking-wider shadow-md">
-            <Rocket className="w-4 h-4 text-[#2563EB] animate-bounce" />
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#3F6EB6]/30 text-[#3F6EB6] text-xs font-bold uppercase tracking-wider shadow-sm">
+            <Rocket className="w-4 h-4 text-[#3F6EB6] animate-bounce" />
             <span>Strong CTA</span>
           </div>
 
           {/* Headline */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#172033] leading-tight">
             Ready to accelerate your{' '}
-            <span className="text-[#2563EB]">digital transformation?</span>
+            <span className="text-[#3F6EB6]">digital transformation?</span>
           </h2>
 
           {/* Description */}
-          <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-normal">
+          <p className="text-[#667085] text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-normal">
             Let's discuss your business challenges and identify the right technology solution.
           </p>
 
@@ -32,7 +32,7 @@ export default function CTABanner({ onOpenConsultation }) {
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={onOpenConsultation}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-extrabold text-base px-8 py-4 rounded-xl shadow-xl shadow-[#2563EB]/20 transition-all duration-300 transform hover:scale-105 cursor-pointer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#3F6EB6] hover:bg-[#325B99] text-white font-extrabold text-base px-8 py-4 rounded-xl shadow-xl shadow-[#3F6EB6]/25 hover:shadow-[#3F6EB6]/40 transition-all duration-300 transform hover:scale-105 cursor-pointer"
             >
               <span>Schedule a Consultation</span>
               <ArrowRight className="w-5 h-5" />
@@ -40,15 +40,15 @@ export default function CTABanner({ onOpenConsultation }) {
 
             <button
               onClick={onOpenConsultation}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-bold text-base px-7 py-4 rounded-xl border border-slate-700 hover:border-[#2563EB] transition-all duration-300 cursor-pointer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-[#172033] font-bold text-base px-7 py-4 rounded-xl border-2 border-slate-200 hover:border-[#3F6EB6] transition-all duration-300 shadow-sm cursor-pointer"
             >
               <span>Talk to Our Experts</span>
             </button>
           </div>
 
           {/* Guarantee pill */}
-          <div className="pt-4 flex items-center justify-center gap-2 text-xs text-slate-400 font-medium">
-            <ShieldCheck className="w-4 h-4 text-[#2563EB]" />
+          <div className="pt-4 flex items-center justify-center gap-2 text-xs text-[#667085] font-medium">
+            <ShieldCheck className="w-4 h-4 text-[#3F6EB6]" />
             <span>LoDi Tech Consulting Private Limited • Confidential Assessment</span>
           </div>
 

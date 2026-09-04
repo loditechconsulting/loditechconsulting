@@ -19,7 +19,7 @@ export default function App() {
   const handleCloseConsultation = () => setIsConsultationOpen(false);
 
   return (
-    <div className="min-h-screen bg-[#071126] text-slate-100 font-['Plus_Jakarta_Sans',sans-serif] selection:bg-[#2563EB] selection:text-white">
+    <div className="min-h-screen bg-[#FFFFFF] text-[#172033] font-['Plus_Jakarta_Sans',sans-serif] selection:bg-[#3F6EB6] selection:text-white">
       {/* Top Header Contact Bar */}
       <TopBar />
 

@@ -95,20 +95,20 @@ export default function ServicesSection({ onOpenConsultation }) {
   ];
 
   return (
-    <section id="services" className="py-20 lg:py-28 bg-[#F8FAFC] text-slate-900 relative">
+    <section id="services" className="py-20 lg:py-28 bg-[#F5F7FA] text-slate-900 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#071126] text-[#2563EB] text-xs font-bold uppercase tracking-wider shadow-sm">
-            <Sparkles className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-[#3F6EB6] text-xs font-bold uppercase tracking-wider shadow-sm">
+            <Sparkles className="w-3.5 h-3.5 text-[#3F6EB6]" />
             <span>Core Services</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071126] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#172033] tracking-tight">
             End-to-End Solutions.{' '}
-            <span className="text-[#2563EB]">Measurable Impact.</span>
+            <span className="text-[#3F6EB6]">Measurable Impact.</span>
           </h2>
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+          <p className="text-base sm:text-lg text-[#667085] leading-relaxed font-normal">
             Delivering SAP, Cloud, Integration, Data, AI and Managed Services that help enterprises modernize, optimize and scale.
           </p>
         </div>
@@ -121,28 +121,28 @@ export default function ServicesSection({ onOpenConsultation }) {
               <div
                 key={service.id}
                 onClick={() => setSelectedService(service)}
-                className="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#2563EB] transition-all duration-300 group cursor-pointer flex flex-col justify-between text-left transform hover:-translate-y-1.5"
+                className="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-[#3F6EB6] transition-all duration-300 group cursor-pointer flex flex-col justify-between text-left transform hover:-translate-y-1.5"
               >
                 <div>
                   {/* Icon */}
-                  <div className="w-12 h-12 rounded-xl bg-[#081635] text-[#2563EB] flex items-center justify-center mb-5 group-hover:bg-[#2563EB] group-hover:text-white transition-colors duration-300 shadow-md">
+                  <div className="w-12 h-12 rounded-xl bg-[#F8FAFC] border border-slate-200 text-[#3F6EB6] flex items-center justify-center mb-5 group-hover:bg-[#3F6EB6] group-hover:text-white group-hover:border-[#3F6EB6] transition-all duration-300 shadow-xs">
                     <IconComponent className="w-6 h-6" />
                   </div>
 
                   {/* Title & Subtitle */}
-                  <h3 className="text-xl font-bold text-[#071126] group-hover:text-[#2563EB] transition-colors mb-1">
+                  <h3 className="text-xl font-bold text-[#172033] group-hover:text-[#3F6EB6] transition-colors mb-1">
                     {service.title}
                   </h3>
-                  <p className="text-xs font-semibold text-slate-500 mb-3">
+                  <p className="text-xs font-semibold text-[#667085] mb-3">
                     {service.subtitle}
                   </p>
-                  <p className="text-sm text-slate-600 leading-relaxed mb-6 font-normal">
+                  <p className="text-sm text-[#667085] leading-relaxed mb-6 font-normal">
                     {service.description}
                   </p>
                 </div>
 
                 {/* Card Action Link */}
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#2563EB] group-hover:text-[#1D4ED8] transition-colors">
+                <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#3F6EB6] group-hover:text-[#325B99] transition-colors">
                   <span>Explore Service Capabilities</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -152,18 +152,18 @@ export default function ServicesSection({ onOpenConsultation }) {
         </div>
 
         {/* CTA Box Below Services */}
-        <div className="mt-16 bg-[#071126] rounded-2xl p-8 lg:p-10 text-white flex flex-col lg:flex-row items-center justify-between gap-6 shadow-xl border border-slate-800">
+        <div className="mt-16 bg-white rounded-2xl p-8 lg:p-10 text-[#172033] flex flex-col lg:flex-row items-center justify-between gap-6 shadow-lg border border-slate-200">
           <div className="text-left max-w-2xl">
-            <h4 className="text-2xl font-bold text-white mb-2">
+            <h4 className="text-2xl font-bold text-[#172033] mb-2">
               Ready to Modernize Your Technology Architecture?
             </h4>
-            <p className="text-slate-300 text-sm sm:text-base">
+            <p className="text-[#667085] text-sm sm:text-base font-normal">
               Talk to our enterprise architects for a technical assessment and custom solution roadmap.
             </p>
           </div>
           <button
             onClick={onOpenConsultation}
-            className="w-full sm:w-auto shrink-0 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg transition-all transform hover:scale-105 cursor-pointer"
+            className="w-full sm:w-auto shrink-0 bg-[#3F6EB6] hover:bg-[#325B99] text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg shadow-[#3F6EB6]/25 transition-all transform hover:scale-105 cursor-pointer"
           >
             Talk to Our Experts →
           </button>
@@ -173,26 +173,26 @@ export default function ServicesSection({ onOpenConsultation }) {
 
       {/* Service Detail Modal */}
       {selectedService && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fadeIn">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fadeIn">
           <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 p-6 sm:p-8 text-left relative">
             
             {/* Close Button */}
             <button
               onClick={() => setSelectedService(null)}
-              className="absolute top-5 right-5 p-2 rounded-full bg-slate-100 text-slate-600 hover:text-slate-900 hover:bg-slate-200 transition-colors"
+              className="absolute top-5 right-5 p-2 rounded-full bg-slate-100 text-[#667085] hover:text-[#172033] hover:bg-slate-200 transition-colors cursor-pointer"
             >
               <X className="w-5 h-5" />
             </button>
 
             {/* Modal Content */}
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 rounded-2xl bg-[#081635] text-[#2563EB] flex items-center justify-center shrink-0 shadow-lg">
+              <div className="w-14 h-14 rounded-2xl bg-[#F8FAFC] border border-slate-200 text-[#3F6EB6] flex items-center justify-center shrink-0 shadow-sm">
                 {React.createElement(selectedService.icon, { className: 'w-7 h-7' })}
               </div>
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-[#2563EB]">Core Service</span>
-                <h3 className="text-2xl font-bold text-[#071126]">{selectedService.title}</h3>
-                <p className="text-xs font-medium text-slate-500">{selectedService.subtitle}</p>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#3F6EB6]">Core Service</span>
+                <h3 className="text-2xl font-bold text-[#172033]">{selectedService.title}</h3>
+                <p className="text-xs font-medium text-[#667085]">{selectedService.subtitle}</p>
               </div>
             </div>
 
@@ -200,16 +200,16 @@ export default function ServicesSection({ onOpenConsultation }) {
               {selectedService.description}
             </p>
 
-            <h4 className="text-xs font-bold text-[#071126] uppercase tracking-wider mb-4">
+            <h4 className="text-xs font-bold text-[#172033] uppercase tracking-wider mb-4">
               Key Features & Capabilities:
             </h4>
             <div className="space-y-3 mb-8">
               {selectedService.features.map((feature, idx) => (
-                <div key={idx} className="flex items-start gap-3 p-3 rounded-lg bg-slate-50 border border-slate-100">
-                  <div className="p-1 rounded-full bg-[#2563EB]/20 text-[#2563EB] shrink-0 mt-0.5">
+                <div key={idx} className="flex items-start gap-3 p-3 rounded-lg bg-[#F8FAFC] border border-slate-200">
+                  <div className="p-1 rounded-full bg-[#3F6EB6]/10 text-[#3F6EB6] shrink-0 mt-0.5">
                     <Check className="w-4 h-4" />
                   </div>
-                  <span className="text-sm font-medium text-slate-800">{feature}</span>
+                  <span className="text-sm font-medium text-[#172033]">{feature}</span>
                 </div>
               ))}
             </div>
@@ -221,13 +221,13 @@ export default function ServicesSection({ onOpenConsultation }) {
                   setSelectedService(null);
                   onOpenConsultation();
                 }}
-                className="flex-1 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold py-3.5 px-6 rounded-xl transition-all text-center shadow-md cursor-pointer"
+                className="flex-1 bg-[#3F6EB6] hover:bg-[#325B99] text-white font-bold py-3.5 px-6 rounded-xl transition-all text-center shadow-md cursor-pointer"
               >
                 Schedule Consultation for {selectedService.title}
               </button>
               <button
                 onClick={() => setSelectedService(null)}
-                className="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3.5 px-6 rounded-xl transition-colors"
+                className="bg-slate-100 hover:bg-slate-200 text-[#172033] font-semibold py-3.5 px-6 rounded-xl transition-colors cursor-pointer"
               >
                 Close
               </button>

@@ -1,34 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <!-- Rounded Squircle Dark Navy Background -->
-  <rect width="64" height="64" rx="16" fill="#172033"/>
+  <!-- High Visibility Brand Blue Rounded Square -->
+  <rect width="64" height="64" rx="16" fill="#3F6EB6"/>
   
-  <!-- Subtle Inner Border for High Contrast on Dark Tabs -->
-  <rect x="1" y="1" width="62" height="62" rx="15" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5"/>
+  <!-- Subtle High-Contrast Inner Border -->
+  <rect x="1.5" y="1.5" width="61" height="61" rx="14.5" stroke="rgba(255, 255, 255, 0.25)" stroke-width="1.5"/>
 
-  <!-- Centered LoDi Symbol Mark -->
-  <g id="LoDi-Favicon-Mark">
-    <!-- O - Main White Body (270 deg) -->
+  <!-- Bold High-Contrast LoDi Symbol (Max Scale for 16px/32px Tab Visibility) -->
+  <g id="LoDi-Favicon-Bold">
+    <!-- O - Solid White 270 deg Heavy Ring Body -->
     <path
-      d="M 24 16 A 16 16 0 1 0 40 32 L 31.5 32 A 7.5 7.5 0 1 1 24 23.5 L 24 16 Z"
+      d="M 24 13 A 19 19 0 1 0 43 32 L 33 32 A 9 9 0 1 1 24 23 L 24 13 Z"
       fill="#FFFFFF"
     />
     
-    <!-- O - Integrated Royal Blue Tech Sector (90 deg) -->
+    <!-- O - 90 deg High-Contrast Dark Navy Tech Sector -->
     <path
-      d="M 24 16 A 16 16 0 0 1 40 32 L 31.5 32 A 7.5 7.5 0 0 0 24 23.5 L 24 16 Z"
-      fill="#3F6EB6"
+      d="M 24 13 A 19 19 0 0 1 43 32 L 33 32 A 9 9 0 0 0 24 23 L 24 13 Z"
+      fill="#172033"
     />
 
-    <!-- I - Main White Stem -->
+    <!-- I - Solid Bold White Stem -->
     <path
-      d="M 43.5 25 H 53.5 V 48 H 43.5 Z"
+      d="M 45 24 H 56 V 51 H 45 Z"
       fill="#FFFFFF"
     />
 
-    <!-- I - Aligned Geometric Blue Dot -->
+    <!-- I - Aligned Dark Navy Tech Accent Fin -->
     <path
-      d="M 43.5 21 H 53.5 V 16 L 43.5 19 Z"
-      fill="#3F6EB6"
+      d="M 45 19 H 56 V 13 L 45 16 Z"
+      fill="#172033"
     />
   </g>
 </svg>

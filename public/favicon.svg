@@ -1,19 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <rect width="64" height="64" rx="14" fill="#172033"/>
-  <g transform="translate(6, 6)">
-    <!-- O Ring Body -->
+  <!-- Rounded Squircle Dark Navy Background -->
+  <rect width="64" height="64" rx="16" fill="#172033"/>
+  
+  <!-- Subtle Inner Border for High Contrast on Dark Tabs -->
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5"/>
+
+  <!-- Centered LoDi Symbol Mark -->
+  <g id="LoDi-Favicon-Mark">
+    <!-- O - Main White Body (270 deg) -->
     <path
-      d="M 26 26 A 19 19 0 1 1 26 7 L 26 15.5 A 10.5 10.5 0 1 0 26 26 Z"
+      d="M 24 16 A 16 16 0 1 0 40 32 L 31.5 32 A 7.5 7.5 0 1 1 24 23.5 L 24 16 Z"
       fill="#FFFFFF"
     />
-    <!-- O 90 deg Blue Tech Sector -->
+    
+    <!-- O - Integrated Royal Blue Tech Sector (90 deg) -->
     <path
-      d="M 26 7 A 19 19 0 0 1 45 26 L 36.5 26 A 10.5 10.5 0 0 0 26 15.5 Z"
+      d="M 24 16 A 16 16 0 0 1 40 32 L 31.5 32 A 7.5 7.5 0 0 0 24 23.5 L 24 16 Z"
       fill="#3F6EB6"
     />
-    <!-- I Stem -->
-    <path d="M 40 18 H 51.5 V 45 H 40 Z" fill="#FFFFFF" />
-    <!-- I Geometric Blue Dot -->
-    <path d="M 40 13 H 51.5 V 7 L 40 10.5 Z" fill="#3F6EB6" />
+
+    <!-- I - Main White Stem -->
+    <path
+      d="M 43.5 25 H 53.5 V 48 H 43.5 Z"
+      fill="#FFFFFF"
+    />
+
+    <!-- I - Aligned Geometric Blue Dot -->
+    <path
+      d="M 43.5 21 H 53.5 V 16 L 43.5 19 Z"
+      fill="#3F6EB6"
+    />
   </g>
 </svg>

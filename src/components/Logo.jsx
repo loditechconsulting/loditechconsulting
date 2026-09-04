@@ -38,21 +38,21 @@ export default function Logo({
         aria-label="LoDi Tech Consulting Mark"
         {...props}
       >
-        <g id="LoDi-Symbol" transform="translate(6, 6)">
+        <g id="LoDi-Symbol">
           {/* Integrated O Ring Body */}
           <path
-            d="M 26 26 A 19 19 0 1 1 26 7 L 26 15.5 A 10.5 10.5 0 1 0 26 26 Z"
+            d="M 24 16 A 16 16 0 1 0 40 32 L 31.5 32 A 7.5 7.5 0 1 1 24 23.5 L 24 16 Z"
             fill={primaryFill}
           />
           {/* O - 90 deg Precision Blue Tech Arc */}
           <path
-            d="M 26 7 A 19 19 0 0 1 45 26 L 36.5 26 A 10.5 10.5 0 0 0 26 15.5 Z"
+            d="M 24 16 A 16 16 0 0 1 40 32 L 31.5 32 A 7.5 7.5 0 0 0 24 23.5 L 24 16 Z"
             fill={brandBlue}
           />
           {/* I - Stem */}
-          <path d="M 40 18 H 51.5 V 45 H 40 Z" fill={primaryFill} />
+          <path d="M 43.5 25 H 53.5 V 48 H 43.5 Z" fill={primaryFill} />
           {/* I - Precision Aligned Geometric Blue Dot */}
-          <path d="M 40 13 H 51.5 V 7 L 40 10.5 Z" fill={brandBlue} />
+          <path d="M 43.5 21 H 53.5 V 16 L 43.5 19 Z" fill={brandBlue} />
         </g>
       </svg>
     );

@@ -3,7 +3,7 @@ import { Database, Cloud, Layers, GitBranch, Cpu, Server, Terminal, Globe, Facto
 
 export default function TechEcosystem() {
   const ecosystemItems = [
-    { name: 'SAP', desc: 'SAP Enterprise Software, S/4HANA ERP & Core Archiving', badge: 'Core ERP', icon: Database },
+    { name: 'SAP', desc: 'SAP Business One, SAP ECC, S/4HANA ERP & Core Archiving', badge: 'Core ERP', icon: Database },
     { name: 'AWS', desc: 'Amazon Web Services Cloud Migration & Infrastructure', badge: 'Cloud Partner', icon: Cloud },
     { name: 'BTP', desc: 'SAP Business Technology Platform & Cloud Extensions', badge: 'Cloud Platform', icon: Layers },
     { name: 'Integration', desc: 'SAP Integration Suite, APIs & B2B Middleware', badge: 'APIs & Mesh', icon: GitBranch },

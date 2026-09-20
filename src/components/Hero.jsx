@@ -54,7 +54,7 @@ export default function Hero({ onOpenConsultation }) {
             <div className="pt-6 border-t border-slate-200 flex flex-wrap items-center gap-6 text-xs sm:text-sm text-[#667085] font-medium">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#3F6EB6]" />
-                <span>SAP S/4HANA & BTP Specialty</span>
+                <span>SAP Business One, SAP ECC, S/4HANA & BTP Speciality</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#3F6EB6]" />

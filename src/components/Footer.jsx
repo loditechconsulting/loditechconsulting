@@ -33,7 +33,7 @@ export default function Footer() {
             </a>
 
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
-              LoDi Tech Consulting delivers high-impact enterprise IT transformation. Specializing in SAP S/4HANA implementation, SAP Data Archiving, AWS Cloud migration, and AI-driven automation.
+              LoDi Tech Consulting delivers high-impact enterprise IT transformation. Specializing in SAP Business One, SAP ECC, S/4HANA & BTP, SAP Data Archiving, AWS Cloud migration, and AI-driven automation.
             </p>
 
             <div className="flex items-center gap-3 pt-2">
@@ -101,11 +101,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#3F6EB6] shrink-0" />
-                <a href="tel:+914068108888" className="hover:text-[#3F6EB6] transition-colors">+91 40 6810 8888</a>
+                <a href="tel:+918328659381" className="hover:text-[#3F6EB6] transition-colors">+91 832-8659381</a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#3F6EB6] shrink-0" />
-                <a href="mailto:info@loditech.com" className="hover:text-[#3F6EB6] transition-colors">info@loditech.com</a>
+                <a href="mailto:Lodioperations@gmail.com" className="hover:text-[#3F6EB6] transition-colors">Lodioperations@gmail.com</a>
               </div>
               <div className="flex items-center gap-2.5 text-slate-400">
                 <Clock className="w-4 h-4 text-[#3F6EB6] shrink-0" />

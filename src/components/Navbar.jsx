@@ -35,9 +35,9 @@ export default function Navbar({ onOpenConsultation }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
-        {/* Brand Logo - Light Variant (Dark Text + Blue Accents) */}
-        <a href="#home" className="flex items-center group py-1" aria-label="LoDi Tech Consulting Home">
-          <Logo variant="light" className="h-12 sm:h-14 lg:h-16 w-auto transition-all group-hover:opacity-90" />
+        {/* Brand Logo */}
+        <a href="#home" className="flex items-center group py-0.5" aria-label="LoDi Tech Consulting Home">
+          <Logo variant="light" className="h-10 sm:h-12 lg:h-14 w-auto object-contain transition-all group-hover:opacity-90" />
         </a>
 
         {/* Desktop Navigation Links */}

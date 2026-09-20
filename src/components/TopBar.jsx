@@ -21,18 +21,18 @@ export default function TopBar() {
         {/* Contact info items */}
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6 font-medium">
           <a 
-            href="mailto:info@loditech.com" 
+            href="mailto:Lodioperations@gmail.com" 
             className="flex items-center gap-1.5 hover:text-[#3F6EB6] transition-colors group"
           >
             <Mail className="w-3.5 h-3.5 text-[#3F6EB6] group-hover:scale-110 transition-transform" />
-            <span>info@loditech.com</span>
+            <span>Lodioperations@gmail.com</span>
           </a>
           <a 
-            href="tel:+914068108888" 
+            href="tel:+918328659381" 
             className="flex items-center gap-1.5 hover:text-[#3F6EB6] transition-colors group"
           >
             <Phone className="w-3.5 h-3.5 text-[#3F6EB6] group-hover:scale-110 transition-transform" />
-            <span>+91 40 6810 8888</span>
+            <span>+91 832-8659381</span>
           </a>
           <div className="hidden lg:flex items-center gap-1.5 text-[#667085]">
             <MapPin className="w-3.5 h-3.5 text-[#3F6EB6]" />

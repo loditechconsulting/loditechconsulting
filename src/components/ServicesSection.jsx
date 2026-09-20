@@ -13,13 +13,13 @@ export default function ServicesSection({ onOpenConsultation }) {
       icon: Database,
       title: 'SAP Services',
       subtitle: 'Implementation, Migration & Archiving',
-      description: 'SAP S/4HANA, SAP BTP, AMS, Implementation, migration, optimization and data archiving.',
+      description: 'SAP Business One, SAP ECC, S/4HANA, SAP BTP, AMS, Implementation, migration, optimization and data archiving.',
       features: [
+        'SAP Business One & SAP ECC Implementations',
         'SAP S/4HANA Cloud & On-Premise Migration',
         'SAP Business Technology Platform (BTP) Innovations',
         'AMS (Application Management Services) 24/7 SLA Support',
-        'SAP Data Archiving & ILM Size Reduction',
-        'System Optimization & ABAP / Fiori Modernization'
+        'SAP Data Archiving & ILM Size Reduction'
       ]
     },
     {

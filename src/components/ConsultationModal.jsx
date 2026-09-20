@@ -7,7 +7,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
     email: '',
     phone: '',
     company: '',
-    service: 'SAP S/4HANA & Data Archiving',
+    service: 'SAP Business One, SAP ECC, S/4HANA & BTP',
     message: '',
   });
 
@@ -38,7 +38,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
       email: '',
       phone: '',
       company: '',
-      service: 'SAP S/4HANA & Data Archiving',
+      service: 'SAP Business One, SAP ECC, S/4HANA & BTP',
       message: '',
     });
     onClose();
@@ -151,7 +151,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
                   onChange={handleChange}
                   className="w-full bg-[#F8FAFC] border border-slate-300 focus:border-[#3F6EB6] rounded-xl px-4 py-3 text-sm text-[#172033] focus:outline-none transition-colors"
                 >
-                  <option value="SAP S/4HANA & Data Archiving">SAP S/4HANA & Data Archiving</option>
+                  <option value="SAP Business One, SAP ECC, S/4HANA & BTP">SAP Business One, SAP ECC, S/4HANA & BTP</option>
                   <option value="Cloud Transformation (AWS/Azure)">Cloud Transformation (AWS/Azure)</option>
                   <option value="Enterprise Integration & APIs">Enterprise Integration & APIs</option>
                   <option value="Data & Analytics / SAC">Data & Analytics / SAC</option>

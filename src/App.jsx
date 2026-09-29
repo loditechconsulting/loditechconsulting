@@ -1,66 +1,56 @@
-import React, { useState } from 'react';
+import { useCallback, useState } from 'react';
+import { ConsultationContext } from './lib/consultation';
 import TopBar from './components/TopBar';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import ServicesSection from './components/ServicesSection';
-import WhyChooseUs from './components/WhyChooseUs';
-import TechEcosystem from './components/TechEcosystem';
-import IndustriesSection from './components/IndustriesSection';
-import OurApproach from './components/OurApproach';
-import SuccessStories from './components/SuccessStories';
-import CTABanner from './components/CTABanner';
 import Footer from './components/Footer';
-import ConsultationModal from './components/ConsultationModal';
+import ConsultationDialog from './components/ConsultationDialog';
+import HomePage from './pages/HomePage';
+import PrivacyPage from './pages/PrivacyPage';
 
-export default function App() {
-  const [isConsultationOpen, setIsConsultationOpen] = useState(false);
+const pages = {
+  home: HomePage,
+  privacy: PrivacyPage,
+};
 
-  const handleOpenConsultation = () => setIsConsultationOpen(true);
-  const handleCloseConsultation = () => setIsConsultationOpen(false);
+export default function App({ page = 'home' }) {
+  const Page = pages[page] ?? HomePage;
+
+  // `key` changes on every open so the form remounts fresh with the requested service
+  const [consultation, setConsultation] = useState({ open: false, key: 0 });
+
+  const openConsultation = useCallback(({ service, context } = {}) => {
+    setConsultation((prev) => ({ open: true, key: prev.key + 1, service, context }));
+  }, []);
+
+  const closeConsultation = useCallback(() => {
+    setConsultation((prev) => ({ ...prev, open: false }));
+  }, []);
 
   return (
-    <div className="min-h-screen bg-[#FFFFFF] text-[#172033] font-['Plus_Jakarta_Sans',sans-serif] selection:bg-[#3F6EB6] selection:text-white">
-      {/* Top Header Contact Bar */}
+    <ConsultationContext value={openConsultation}>
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-brand focus:px-4 focus:py-3 focus:font-bold focus:text-white"
+      >
+        Skip to content
+      </a>
+
       <TopBar />
+      <Navbar />
 
-      {/* Main Navigation Bar */}
-      <Navbar onOpenConsultation={handleOpenConsultation} />
-
-      {/* Main Content Sections */}
-      <main>
-        {/* Hero Section */}
-        <Hero onOpenConsultation={handleOpenConsultation} />
-
-        {/* Core Services */}
-        <ServicesSection onOpenConsultation={handleOpenConsultation} />
-
-        {/* Why LoDi Tech */}
-        <WhyChooseUs onOpenConsultation={handleOpenConsultation} />
-
-        {/* Technology Ecosystem */}
-        <TechEcosystem />
-
-        {/* Industries Vertical Solutions */}
-        <IndustriesSection onOpenConsultation={handleOpenConsultation} />
-
-        {/* Our Approach (Discover -> Design -> Implement -> Optimize -> Support) */}
-        <OurApproach onOpenConsultation={handleOpenConsultation} />
-
-        {/* Success Stories & Case Studies */}
-        <SuccessStories onOpenConsultation={handleOpenConsultation} />
-
-        {/* Strong Call to Action Banner */}
-        <CTABanner onOpenConsultation={handleOpenConsultation} />
+      <main id="main" tabIndex={-1} className="focus:outline-none">
+        <Page />
       </main>
 
-      {/* Footer */}
       <Footer />
 
-      {/* Consultation Modal Dialog */}
-      <ConsultationModal 
-        isOpen={isConsultationOpen} 
-        onClose={handleCloseConsultation} 
+      <ConsultationDialog
+        key={consultation.key}
+        open={consultation.open}
+        onClose={closeConsultation}
+        initialService={consultation.service}
+        context={consultation.context}
       />
-    </div>
+    </ConsultationContext>
   );
 }

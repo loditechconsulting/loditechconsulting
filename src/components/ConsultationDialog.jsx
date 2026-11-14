@@ -114,8 +114,8 @@ export default function ConsultationDialog({ open, onClose, initialService, cont
           )}
 
           <p className="mt-4 text-sm text-muted">
-            Need us sooner? Call{' '}
-            <a href={company.phone.href} className="font-bold text-ink hover:text-brand-600">{company.phone.display}</a>
+            Need us sooner? Email us at{' '}
+            <a href={`mailto:${company.email}`} className="font-bold text-ink hover:text-brand-600">{company.email}</a>
           </p>
 
           <button type="button" onClick={onClose} className={buttonClass({ className: 'mt-8' })}>

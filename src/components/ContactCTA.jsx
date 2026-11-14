@@ -1,4 +1,4 @@
-import { ArrowRight, Clock, Mail, Phone } from 'lucide-react';
+import { ArrowRight, Clock, Mail } from 'lucide-react';
 import { company } from '../content/site';
 import { useConsultation } from '../lib/consultation';
 
@@ -41,9 +41,9 @@ export default function ContactCTA() {
             </div>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-medium text-blue-50/90">
-              <a href={company.phone.href} className="flex items-center gap-2 hover:text-white">
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                {company.phone.display}
+              <a href={`mailto:${company.email}`} className="flex items-center gap-2 hover:text-white">
+                <Mail className="h-4 w-4" aria-hidden="true" />
+                {company.email}
               </a>
               <span className="flex items-center gap-2">
                 <Clock className="h-4 w-4" aria-hidden="true" />

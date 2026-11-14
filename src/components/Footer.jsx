@@ -1,4 +1,4 @@
-import { ArrowUp, Clock, Mail, MapPin, Phone } from 'lucide-react';
+import { ArrowUp, Clock, Mail, MapPin } from 'lucide-react';
 import { company, services } from '../content/site';
 import Logo from './ui/Logo';
 import SocialLinks from './ui/SocialLinks';
@@ -22,12 +22,12 @@ export default function Footer() {
     <footer className="bg-ink text-sm text-slate-400">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 lg:grid-cols-12 lg:gap-12 lg:px-8">
         <div className="space-y-5 lg:col-span-4">
-          <a href="/#home" className="inline-block rounded-xl bg-white px-4 py-2.5" aria-label="LoDi Tech Consulting, home">
+          <a href="/#home" className="inline-block bg-white px-4 py-2.5" aria-label="LoDi Tech Consulting, home">
             <Logo className="h-12" />
           </a>
           <p className="max-w-sm leading-relaxed">
             Enterprise IT consulting specializing in SAP Business One, SAP ECC, S/4HANA &amp; BTP, SAP data
-            archiving, AWS cloud migration and AI-driven automation.
+            archiving, AWS cloud migration, MES and AI-driven automation.
           </p>
           <SocialLinks
             linkClassName="grid h-9 w-9 place-items-center rounded-lg bg-white/5 text-slate-300 transition-colors hover:bg-brand hover:text-white"
@@ -61,10 +61,6 @@ export default function Footer() {
                 {company.legalName}, {address.street}, {address.locality}, {address.region} {address.postalCode},{' '}
                 {address.country}
               </span>
-            </p>
-            <p className="flex items-center gap-2.5">
-              <Phone className="h-4 w-4 shrink-0 text-brand-300" aria-hidden="true" />
-              <a href={company.phone.href} className={linkClass}>{company.phone.display}</a>
             </p>
             <p className="flex items-center gap-2.5">
               <Mail className="h-4 w-4 shrink-0 text-brand-300" aria-hidden="true" />

@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, Clock } from 'lucide-react';
 import { company } from '../content/site';
 import SocialLinks from './ui/SocialLinks';
 
@@ -11,14 +11,6 @@ export default function TopBar() {
             <Mail className="h-3.5 w-3.5 text-brand" aria-hidden="true" />
             <span>{company.email}</span>
           </a>
-          <a href={company.phone.href} className="group flex items-center gap-1.5 transition-colors hover:text-brand-600">
-            <Phone className="h-3.5 w-3.5 text-brand" aria-hidden="true" />
-            <span>{company.phone.display}</span>
-          </a>
-          <span className="hidden items-center gap-1.5 lg:flex">
-            <MapPin className="h-3.5 w-3.5 text-brand" aria-hidden="true" />
-            {company.address.street}, {company.address.locality}, {company.address.country}
-          </span>
         </div>
 
         <div className="hidden items-center gap-4 md:flex">

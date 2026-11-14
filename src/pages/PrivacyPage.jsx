@@ -94,7 +94,7 @@ export default function PrivacyPage() {
             {company.address.street}, {company.address.locality}, {company.address.region} {company.address.postalCode},{' '}
             {company.address.country}
             <br />
-            <a href={`mailto:${company.email}`}>{company.email}</a> · <a href={company.phone.href}>{company.phone.display}</a>
+            <a href={`mailto:${company.email}`}>{company.email}</a>
           </p>
         </Section>
 

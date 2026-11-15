@@ -26,7 +26,7 @@ export default function Footer() {
             <Logo className="h-12" />
           </a>
           <p className="max-w-sm leading-relaxed">
-            Enterprise IT consulting specializing in SAP Business One, SAP ECC, S/4HANA &amp; BTP, SAP data
+            Enterprise IT consulting specializing in SAP ECC, S/4HANA &amp; BTP, SAP data
             archiving, AWS cloud migration, MES and AI-driven automation.
           </p>
           <SocialLinks

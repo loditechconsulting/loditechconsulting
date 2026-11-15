@@ -40,7 +40,7 @@ export const hero = {
   summary:
     'Delivering SAP, Cloud, Integration, Data, AI and Managed Services that help enterprises modernize, optimize and scale.',
   highlights: [
-    'SAP Business One, SAP ECC, S/4HANA & BTP specialists',
+    'SAP ECC, S/4HANA & BTP specialists',
     'AWS cloud migration & DevOps',
     'End-to-end managed support',
   ],
@@ -62,9 +62,9 @@ export const services = [
     short: 'S/4HANA, BTP, AMS & Archiving',
     subtitle: 'Implementation, Migration & Archiving',
     description:
-      'SAP Business One, SAP ECC, S/4HANA, SAP BTP and AMS: implementation, migration, optimization and data archiving.',
+      'SAP ECC, S/4HANA, SAP BTP and AMS: implementation, migration, optimization and data archiving.',
     features: [
-      'SAP Business One & SAP ECC implementations',
+      'SAP ECC implementations',
       'SAP S/4HANA cloud & on-premise migration',
       'SAP Business Technology Platform (BTP) extensions',
       'Application Management Services (AMS) with SLA-based support',
@@ -180,7 +180,7 @@ export const pillars = [
 ];
 
 export const technologies = [
-  { name: 'SAP', desc: 'SAP Business One, SAP ECC, S/4HANA ERP & archiving', badge: 'Core ERP', icon: Database },
+  { name: 'SAP', desc: 'SAP ECC, S/4HANA ERP & archiving', badge: 'Core ERP', icon: Database },
   { name: 'AWS', desc: 'Cloud migration, infrastructure & managed hosting', badge: 'Cloud', icon: Cloud },
   { name: 'SAP BTP', desc: 'Business Technology Platform & cloud extensions', badge: 'Platform', icon: Layers },
   { name: 'Integration', desc: 'SAP Integration Suite, APIs & B2B middleware', badge: 'APIs', icon: GitBranch },

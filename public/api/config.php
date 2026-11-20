@@ -16,7 +16,7 @@ return [
     'smtp_auth'       => true,
 
     // Your GoDaddy Mailbox Login:
-    'smtp_username'   => 'YOUR_GODADDY_MAILBOX_EMAIL',
+    'smtp_username'   => 'loditechc@gmail.com',
     'smtp_password'   => 'YOUR_GODADDY_MAILBOX_PASSWORD',
 
     // Sender details shown in the recipient inbox

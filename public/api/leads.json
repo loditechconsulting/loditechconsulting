@@ -8,5 +8,15 @@
         "service": "Data & Analytics",
         "message": "Testing PHPMailer directly",
         "context": ""
+    },
+    {
+        "timestamp": "2026-11-20 04:24:25 UTC",
+        "fullName": "Antigravity Test",
+        "email": "test@loditechconsulting.com",
+        "phone": "+91 9876543210",
+        "company": "LoDi Tech Test",
+        "service": "SAP Services",
+        "message": "Automated test of contact form",
+        "context": ""
     }
 ]

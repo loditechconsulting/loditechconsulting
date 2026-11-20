@@ -51,15 +51,15 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 // Load config
 $config = file_exists(__DIR__ . '/config.php') ? require __DIR__ . '/config.php' : [];
 
-$toEmail      = $config['to_email'] ?? 'pmo@loditechconsulting.com';
-$toName       = $config['to_name'] ?? 'LoDi Tech Consulting PMO';
+$toEmail      = $config['to_email'] ?? 'loditechc@gmail.com';
+$toName       = $config['to_name'] ?? 'LoDi Tech Consulting Admin';
 $smtpHost     = $config['smtp_host'] ?? 'smtpout.secureserver.net';
 $smtpPort     = $config['smtp_port'] ?? 465;
 $smtpSecure   = $config['smtp_secure'] ?? 'ssl';
 $smtpAuth     = $config['smtp_auth'] ?? true;
-$smtpUsername = $config['smtp_username'] ?? 'pmo@loditechconsulting.com';
+$smtpUsername = $config['smtp_username'] ?? 'loditechc@gmail.com';
 $smtpPassword = $config['smtp_password'] ?? '';
-$fromEmail    = $config['from_email'] ?? 'pmo@loditechconsulting.com';
+$fromEmail    = $config['from_email'] ?? 'loditechc@gmail.com';
 $fromName     = $config['from_name'] ?? 'LoDi Tech Consulting Website';
 
 $subject = "LoDi Tech Consulting: New Consultation Request from " . $fullName;
@@ -143,7 +143,7 @@ use PHPMailer\PHPMailer\Exception;
 $mail = new PHPMailer(true);
 
 try {
-    if (!empty($smtpPassword) && $smtpPassword !== 'YOUR_GODADDY_EMAIL_PASSWORD') {
+    if (!empty($smtpPassword) && $smtpPassword !== 'YOUR_EMAIL_PASSWORD' && $smtpPassword !== 'YOUR_GODADDY_EMAIL_PASSWORD') {
         // GoDaddy SMTP configured
         $mail->isSMTP();
         $mail->Host       = $smtpHost;

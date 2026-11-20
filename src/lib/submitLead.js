@@ -1,10 +1,10 @@
 import { company } from '../content/site';
 
-const defaultEndpoint = 'https://formsubmit.co/ajax/loditechc@gmail.com';
+const defaultEndpoint = '/api/contact.php';
 const endpoint = import.meta.env.VITE_FORM_ENDPOINT || defaultEndpoint;
 const accessKey = import.meta.env.VITE_FORM_ACCESS_KEY;
 
-/** True when a form backend is configured; defaults to FormSubmit. */
+/** True when a form backend is configured; defaults to /api/contact.php. */
 export const hasFormEndpoint = Boolean(endpoint);
 
 /**

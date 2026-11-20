@@ -188,14 +188,10 @@ export default function ConsultationDialog({ open, onClose, initialService, cont
                 <TriangleAlert className="mt-0.5 h-5 w-5 shrink-0" aria-hidden="true" />
                 <div className="space-y-1">
                   <p className="font-semibold">
-                    {errorMsg.toLowerCase().includes('activation')
-                      ? 'Form activation pending'
-                      : 'We couldn’t send your request just now.'}
+                    We couldn’t send your request just now.
                   </p>
                   <p>
-                    {errorMsg.toLowerCase().includes('activation')
-                      ? 'Please check your inbox at loditechc@gmail.com and click the confirmation link to enable submissions.'
-                      : errorMsg || 'Please try again, or email us directly.'}
+                    {errorMsg || 'Please try again, or email us directly.'}
                   </p>
                   <p className="text-xs">
                     Or email us directly at{' '}

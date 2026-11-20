@@ -47,6 +47,7 @@ export default function ConsultationDialog({ open, onClose, initialService, cont
     message: '',
   });
   const [status, setStatus] = useState('idle'); // idle | submitting | success | mailto | error
+  const [errorMsg, setErrorMsg] = useState('');
   const honeypot = useRef(null);
   const resultHeading = useRef(null);
 
@@ -74,10 +75,12 @@ export default function ConsultationDialog({ open, onClose, initialService, cont
     }
 
     setStatus('submitting');
+    setErrorMsg('');
     try {
       await submitLead(payload);
       setStatus('success');
-    } catch {
+    } catch (err) {
+      setErrorMsg(err.message || '');
       setStatus('error');
     }
   }
@@ -183,10 +186,24 @@ export default function ConsultationDialog({ open, onClose, initialService, cont
             {status === 'error' && (
               <div role="alert" className="flex items-start gap-3 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800">
                 <TriangleAlert className="mt-0.5 h-5 w-5 shrink-0" aria-hidden="true" />
-                <p>
-                  We couldn’t send your request just now. Please try again, or{' '}
-                  <a href={buildMailto(payload)} className="font-bold underline underline-offset-2">email it to us directly</a>.
-                </p>
+                <div className="space-y-1">
+                  <p className="font-semibold">
+                    {errorMsg.toLowerCase().includes('activation')
+                      ? 'Form activation pending'
+                      : 'We couldn’t send your request just now.'}
+                  </p>
+                  <p>
+                    {errorMsg.toLowerCase().includes('activation')
+                      ? 'Please check your inbox at loditechc@gmail.com and click the FormSubmit activation link once to enable submissions.'
+                      : errorMsg || 'Please try again, or email us directly.'}
+                  </p>
+                  <p className="text-xs">
+                    Or email us directly at{' '}
+                    <a href={buildMailto(payload)} className="font-bold underline underline-offset-2">
+                      {company.email}
+                    </a>.
+                  </p>
+                </div>
               </div>
             )}
 

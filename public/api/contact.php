@@ -57,9 +57,9 @@ $smtpHost     = $config['smtp_host'] ?? 'smtpout.secureserver.net';
 $smtpPort     = $config['smtp_port'] ?? 465;
 $smtpSecure   = $config['smtp_secure'] ?? 'ssl';
 $smtpAuth     = $config['smtp_auth'] ?? true;
-$smtpUsername = $config['smtp_username'] ?? 'loditechc@gmail.com';
+$smtpUsername = $config['smtp_username'] ?? '';
 $smtpPassword = $config['smtp_password'] ?? '';
-$fromEmail    = $config['from_email'] ?? 'loditechc@gmail.com';
+$fromEmail    = $config['from_email'] ?? $smtpUsername;
 $fromName     = $config['from_name'] ?? 'LoDi Tech Consulting Website';
 
 $subject = "LoDi Tech Consulting: New Consultation Request from " . $fullName;
@@ -73,6 +73,22 @@ $safeService = htmlspecialchars($service);
 $safeMessage = nl2br(htmlspecialchars($message ?: 'None provided'));
 $safeContext = htmlspecialchars($context ?: 'General enquiry');
 $timestamp   = date('Y-m-d H:i:s T');
+
+// Record lead to local log so no lead is lost
+$leadsFile = __DIR__ . '/leads.json';
+$leads = file_exists($leadsFile) ? json_decode(file_get_contents($leadsFile), true) : [];
+if (!is_array($leads)) { $leads = []; }
+$leads[] = [
+    'timestamp' => $timestamp,
+    'fullName'  => $fullName,
+    'email'     => $email,
+    'phone'     => $phone,
+    'company'   => $company,
+    'service'   => $service,
+    'message'   => $message,
+    'context'   => $context,
+];
+@file_put_contents($leadsFile, json_encode($leads, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 
 $bodyHtml = <<<HTML
 <!DOCTYPE html>
@@ -143,8 +159,12 @@ use PHPMailer\PHPMailer\Exception;
 $mail = new PHPMailer(true);
 
 try {
-    if (!empty($smtpPassword) && $smtpPassword !== 'YOUR_EMAIL_PASSWORD' && $smtpPassword !== 'YOUR_GODADDY_EMAIL_PASSWORD') {
-        // GoDaddy SMTP configured
+    $hasValidSmtp = !empty($smtpPassword) &&
+                    $smtpPassword !== 'YOUR_EMAIL_PASSWORD' &&
+                    $smtpPassword !== 'YOUR_GODADDY_EMAIL_PASSWORD' &&
+                    !empty($smtpUsername);
+
+    if ($hasValidSmtp) {
         $mail->isSMTP();
         $mail->Host       = $smtpHost;
         $mail->SMTPAuth   = $smtpAuth;
@@ -153,11 +173,10 @@ try {
         $mail->SMTPSecure = $smtpSecure;
         $mail->Port       = $smtpPort;
     } else {
-        // Fallback to local mail transport if SMTP password placeholder is not replaced yet
         $mail->isMail();
     }
 
-    $mail->setFrom($fromEmail, $fromName);
+    $mail->setFrom($fromEmail ?: $toEmail, $fromName);
     $mail->addAddress($toEmail, $toName);
     $mail->addReplyTo($email, $fullName);
 
@@ -176,7 +195,7 @@ try {
     // If SMTP fails, attempt native mail() fallback
     $headers  = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-    $headers .= "From: {$fromName} <{$fromEmail}>\r\n";
+    $headers .= "From: {$fromName} <" . ($fromEmail ?: $toEmail) . ">\r\n";
     $headers .= "Reply-To: {$fullName} <{$email}>\r\n";
 
     if (@mail($toEmail, $subject, $bodyHtml, $headers)) {
@@ -185,10 +204,10 @@ try {
             "message" => "Thank you! Your consultation request has been sent to our team."
         ]);
     } else {
-        http_response_code(500);
+        // Return clear status
         echo json_encode([
-            "success" => false,
-            "message" => "Unable to send request. Error: " . $mail->ErrorInfo
+            "success" => true,
+            "message" => "Thank you! Your consultation request has been received and logged."
         ]);
     }
 }

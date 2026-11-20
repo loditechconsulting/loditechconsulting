@@ -1,4 +1,0 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteRule ^api/contact$ /api/contact.php [L,QSA]
-</IfModule>

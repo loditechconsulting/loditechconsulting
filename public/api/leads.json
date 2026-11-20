@@ -1,0 +1,12 @@
+[
+    {
+        "timestamp": "2026-11-20 04:12:42 UTC",
+        "fullName": "Suneel Test",
+        "email": "loditechc@gmail.com",
+        "phone": "9876543210",
+        "company": "LoDi Tech Consulting",
+        "service": "Data & Analytics",
+        "message": "Testing PHPMailer directly",
+        "context": ""
+    }
+]

@@ -5,8 +5,7 @@ import { defineConfig } from 'vite'
 
 function localContactApi() {
   const handler = (req, res, next) => {
-    const isContactPath = req.url === '/api/contact' || req.url?.startsWith('/api/contact?') ||
-                          req.url === '/api/contact.php' || req.url?.startsWith('/api/contact.php?')
+    const isContactPath = req.url === '/api/contact.php' || req.url?.startsWith('/api/contact.php?')
 
     if (isContactPath && req.method === 'POST') {
       let body = ''
@@ -14,7 +13,7 @@ function localContactApi() {
       req.on('end', () => {
         try {
           const data = JSON.parse(body)
-          console.log('\n[Local Server] Received consultation form submission:')
+          console.log('\n[PHPMailer Dev Server] Received consultation form submission:')
           console.log('  To: loditechc@gmail.com (testing)')
           console.log('  Name:', data.fullName || data.name)
           console.log('  Email:', data.email)

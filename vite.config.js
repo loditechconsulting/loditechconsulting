@@ -57,7 +57,7 @@ export default defineConfig({
     tailwindcss(),
   ],
   build: {
-    rolldownOptions: {
+    rollupOptions: {
       // One HTML entry per page; each is prerendered by scripts/prerender.mjs
       input: {
         main: fileURLToPath(new URL('./index.html', import.meta.url)),

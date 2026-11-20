@@ -23,14 +23,15 @@ export async function submitLead(data) {
         service: data.service,
         message: data.message,
         ...(data.context && { context: data.context }),
-        _subject: `Website consultation request from ${data.fullName}`,
+        _subject: `LoDi Tech Consulting: Consultation Request from ${data.fullName}`,
+        _replyto: data.email,
         _template: 'table',
         _captcha: 'false',
       }
     : {
         ...(accessKey && { access_key: accessKey }),
-        subject: `Website consultation request from ${data.fullName}`,
-        from_name: `${company.name} website`,
+        subject: `LoDi Tech Consulting: Consultation Request from ${data.fullName}`,
+        from_name: `${company.name}`,
         ...data,
       };
 

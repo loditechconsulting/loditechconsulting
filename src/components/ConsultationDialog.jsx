@@ -194,7 +194,7 @@ export default function ConsultationDialog({ open, onClose, initialService, cont
                   </p>
                   <p>
                     {errorMsg.toLowerCase().includes('activation')
-                      ? 'Please check your inbox at loditechc@gmail.com and click the FormSubmit activation link once to enable submissions.'
+                      ? 'Please check your inbox at loditechc@gmail.com and click the confirmation link to enable submissions.'
                       : errorMsg || 'Please try again, or email us directly.'}
                   </p>
                   <p className="text-xs">

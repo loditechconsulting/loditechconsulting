@@ -14,7 +14,7 @@ function localContactApi() {
         try {
           const data = JSON.parse(body)
           console.log('\n[PHPMailer Dev Server] Received consultation form submission:')
-          console.log('  To: loditechc@gmail.com (testing)')
+          console.log('  To: pmo@loditechconsulting.com')
           console.log('  Name:', data.fullName || data.name)
           console.log('  Email:', data.email)
           console.log('  Phone:', data.phone || 'Not provided')

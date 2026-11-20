@@ -1,7 +1,7 @@
 import { company } from '../content/site';
 
 const primaryEndpoint = import.meta.env.VITE_FORM_ENDPOINT || '/api/contact.php';
-const fallbackEndpoint = 'https://formsubmit.co/ajax/loditechc@gmail.com';
+const fallbackEndpoint = 'https://formsubmit.co/ajax/pmo@loditechconsulting.com';
 
 /** True when a form backend is configured. */
 export const hasFormEndpoint = true;
@@ -9,7 +9,7 @@ export const hasFormEndpoint = true;
 /**
  * Posts a consultation request as JSON.
  * Primary: /api/contact.php (PHPMailer on PHP hosting)
- * Fallback: FormSubmit (direct relay to loditechc@gmail.com on Vercel/static hosts)
+ * Fallback: FormSubmit (direct relay to pmo@loditechconsulting.com on Vercel/static hosts)
  */
 export async function submitLead(data) {
   const isFormSubmit = primaryEndpoint.includes('formsubmit.co');

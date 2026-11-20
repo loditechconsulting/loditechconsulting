@@ -6,7 +6,7 @@
  */
 return [
     // Recipient email where consultation requests are delivered
-    'to_email' => 'loditechc@gmail.com',
+    'to_email' => 'pmo@loditechconsulting.com',
     'to_name'  => 'LoDi Tech Consulting Admin',
 
     // GoDaddy SMTP Server Settings:
@@ -16,10 +16,10 @@ return [
     'smtp_auth'       => true,
 
     // Your GoDaddy Mailbox Login:
-    'smtp_username'   => 'loditechc@gmail.com',
+    'smtp_username'   => 'pmo@loditechconsulting.com',
     'smtp_password'   => 'YOUR_GODADDY_MAILBOX_PASSWORD',
 
     // Sender details shown in the recipient inbox
-    'from_email'      => 'loditechc@gmail.com',
+    'from_email'      => 'pmo@loditechconsulting.com',
     'from_name'       => 'LoDi Tech Consulting Website',
 ];

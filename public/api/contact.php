@@ -51,7 +51,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 // Load config
 $config = file_exists(__DIR__ . '/config.php') ? require __DIR__ . '/config.php' : [];
 
-$toEmail      = $config['to_email'] ?? 'loditechc@gmail.com';
+$toEmail      = $config['to_email'] ?? 'pmo@loditechconsulting.com';
 $toName       = $config['to_name'] ?? 'LoDi Tech Consulting Admin';
 $smtpHost     = $config['smtp_host'] ?? 'smtpout.secureserver.net';
 $smtpPort     = $config['smtp_port'] ?? 465;

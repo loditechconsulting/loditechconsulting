@@ -15,7 +15,7 @@ import {
 export const company = {
   name: 'LoDi Tech Consulting',
   legalName: 'LoDi Tech Consulting Private Limited',
-  email: 'loditechc@gmail.com',
+  email: 'pmo@loditechconsulting.com',
   phone: { display: '+91 832-8659381', href: 'tel:+918328659381', e164: '+918328659381' },
   address: {
     street: 'Hi-Tech City',

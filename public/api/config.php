@@ -6,8 +6,9 @@
  */
 return [
     // Recipient where consultation requests are delivered
-    'to_email' => 'pmo@loditechconsulting.com',
-    'to_name'  => 'LoDi Tech Consulting PMO',
+    // Set to loditechc@gmail.com for testing; switch to pmo@loditechconsulting.com after testing
+    'to_email' => 'loditechc@gmail.com',
+    'to_name'  => 'LoDi Tech Consulting Admin',
 
     // SMTP Server Settings:
     // - For GoDaddy Workspace / Professional Email:
